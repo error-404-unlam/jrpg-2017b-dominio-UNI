@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/XXX/jrpg-2017b-dominio.svg?branch=master)](https://travis-ci.org/XXX/jrpg-2017b-dominio)
+[![Build Status](https://travis-ci.org/error-404-unlam/jrpg-2017b-dominio.svg?branch=master)](https://travis-ci.org/error-404-unlam/jrpg-2017b-dominio)
 # World Of Middle Earth (WOME) - dominio
 
 ## Sobre las personas
@@ -12,14 +12,13 @@
 
 ### Integrantes del equipo
 
-* Completar ([xxxx](https://github.com/xxxx))
-* Completar ([xxxx](https://github.com/xxxx))
-* Completar ([xxxx](https://github.com/xxxx))
-* Completar ([xxxx](https://github.com/xxxx))
-* Completar ([xxxx](https://github.com/xxxx))
-* Completar ([xxxx](https://github.com/xxxx))
-* Completar ([xxxx](https://github.com/xxxx))
-* Completar ([xxxx](https://github.com/xxxx))
+* Gabriel Quinteros ([GabrielQuinteros](https://github.com/GabrielQuinteros))
+* Cristian Castagna ([Marvix8](https://github.com/Marvix8))
+* Matías Orsi ([matiasunlam](https://github.com/matiasunlam))
+* Miguel Angel Amengual ([Miguel6](https://github.com/Miguel6))
+* Patricia Sandagorda ([patriciasandagorda](https://github.com/patriciasandagorda))
+* Leonel San Martin ([leo9210](https://github.com/leo9210))
+* Javier Emmanuel Medina ([javiermedina87](https://github.com/javiermedina87))
 
 
 ## Sobre la tecnología
