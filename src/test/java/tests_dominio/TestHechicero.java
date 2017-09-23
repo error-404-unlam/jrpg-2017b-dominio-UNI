@@ -15,8 +15,8 @@ public class TestHechicero {
 	public void testCurar() {
 		Humano h = new Humano("Nico", 100, 100, 55, 20, 30, new Hechicero(0.2, 0.3, 1.5), 0, 1, 1);
 		Elfo e = new Elfo("Nico", 100, 100, 25, 20, 30, new Asesino(0.2, 0.3, 1.5), 0, 3, 1);
-		h.setRandom(new MyRandomStub(0.49,3));
-		e.setRandom(new MyRandomStub(0.49,3));
+		h.setRandom(new MyRandomStub(0.49, 3));
+		e.setRandom(new MyRandomStub(0.49, 3));
 		Assert.assertTrue(e.getSalud() == 100);
 		e.reducirSalud(35);
 		Assert.assertTrue(e.getSalud() == 65);
@@ -28,8 +28,8 @@ public class TestHechicero {
 	public void testBolaDeFuego() {
 		Humano h = new Humano("Nico", 100, 100, 55, 20, 30, new Hechicero(0.2, 0.3, 1.5), 0, 1, 1);
 		Elfo e = new Elfo("Nico", 100, 100, 25, 20, 30, new Asesino(0.2, 0.3, 1.5), 0, 3, 1);
-		h.setRandom(new MyRandomStub(0.49,3));
-		e.setRandom(new MyRandomStub(0.49,3));
+		h.setRandom(new MyRandomStub(0.49, 3));
+		e.setRandom(new MyRandomStub(0.49, 3));
 		Assert.assertTrue(e.getSalud() == 100);
 		if (h.habilidadCasta1(e))
 			Assert.assertTrue(e.getSalud() < 100);
@@ -41,8 +41,8 @@ public class TestHechicero {
 	public void testRobarEnergia_y_Salud() {
 		Humano h = new Humano("Nico", 100, 100, 55, 20, 50, new Hechicero(0.2, 0.3, 1.5), 0, 1, 1);
 		Elfo e = new Elfo("Nico", 100, 100, 25, 20, 30, new Asesino(0.2, 0.3, 1.5), 0, 3, 1);
-		h.setRandom(new MyRandomStub(0.49,3));
-		e.setRandom(new MyRandomStub(0.49,3));
+		h.setRandom(new MyRandomStub(0.49, 3));
+		e.setRandom(new MyRandomStub(0.49, 3));
 		Assert.assertTrue(e.getSalud() == 100);
 		h.reducirSalud(50);
 		h.aumentarEnergia(-55);

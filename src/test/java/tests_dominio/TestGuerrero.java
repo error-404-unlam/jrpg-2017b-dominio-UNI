@@ -15,8 +15,8 @@ public class TestGuerrero {
 	public void testDobleGolpe() {
 		Humano h = new Humano("Nico", 100, 100, 25, 20, 30, new Guerrero(0.2, 0.3, 1.5), 0, 1, 1);
 		Elfo e = new Elfo("Nico", 100, 100, 25, 20, 30, new Asesino(0.2, 0.3, 1.5), 0, 3, 1);
-		h.setRandom(new MyRandomStub(0.49,3));
-		e.setRandom(new MyRandomStub(0.49,3));
+		h.setRandom(new MyRandomStub(0.49, 3));
+		e.setRandom(new MyRandomStub(0.49, 3));
 		Assert.assertTrue(e.getSalud() == 100);
 		if (h.habilidadCasta1(e))
 			Assert.assertTrue(e.getSalud() < 100);
@@ -28,7 +28,7 @@ public class TestGuerrero {
 	@Test
 	public void testAutoDefensa() {
 		Humano h = new Humano("Nico", 100, 100, 25, 20, 30, new Guerrero(0.2, 0.3, 1.5), 0, 1, 1);
-		h.setRandom(new MyRandomStub(0.49,3));
+		h.setRandom(new MyRandomStub(0.49, 3));
 		Assert.assertTrue(h.getDefensa() == 20);
 		h.habilidadCasta2(null);
 		Assert.assertTrue(h.getDefensa() == 65);
@@ -38,8 +38,8 @@ public class TestGuerrero {
 	public void testIgnoraDefensa() {
 		Humano h = new Humano("Nico", 100, 100, 25, 20, 30, new Guerrero(0.2, 0.3, 1.5), 0, 1, 1);
 		Elfo e = new Elfo("Nico", 100, 100, 25, 20, 30, new Asesino(0.2, 0.3, 1.5), 0, 3, 1);
-		h.setRandom(new MyRandomStub(0.49,3));
-		e.setRandom(new MyRandomStub(0.49,3));
+		h.setRandom(new MyRandomStub(0.49, 3));
+		e.setRandom(new MyRandomStub(0.49, 3));
 		Assert.assertTrue(e.getSalud() == 100);
 		if (h.habilidadCasta3(e))
 			Assert.assertTrue(e.getSalud() < 100);

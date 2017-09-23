@@ -11,7 +11,7 @@ public class TestRandomGenerator {
 	public void test() {
 		RandomGenerator ran = new RandomGenerator();
 		Assert.assertEquals(0, ran.nextInt(3));
-		Assert.assertEquals(0, ran.nextDouble(),0);
+		Assert.assertEquals(0, ran.nextDouble(), 0);
 	}
 
 }
