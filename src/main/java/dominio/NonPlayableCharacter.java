@@ -2,8 +2,7 @@
 package dominio;
 
 /**
- * La clase NonPlayableCharacter (NPC). Representa a los personajes del juego
- * que no son controlados por humanos. Implementa la Interfaz Peleable.
+ * La clase NonPlayableCharacter (NPC). Representa a los personajes del juego que no son controlados por humanos. Implementa la Interfaz Peleable.
  */
 
 public class NonPlayableCharacter extends MadreDeTodo implements Peleable {
@@ -65,9 +64,7 @@ public class NonPlayableCharacter extends MadreDeTodo implements Peleable {
 	private static final int MULTIPLICADORD = 1;
 
 	/**
-	 * Constructor de la Clase. Dependiendo de la dificultad que se pasa por
-	 * parámetro al constructor, aumentará o disminuirá el valor de los
-	 * atributos fuerza salud y defensa.
+	 * Constructor de la Clase. Dependiendo de la dificultad que se pasa por parámetro al constructor, aumentará o disminuirá el valor de los atributos fuerza salud y defensa.
 	 * 
 	 * @param nombre
 	 *            Nombre que se le otorga al NPC
@@ -92,9 +89,7 @@ public class NonPlayableCharacter extends MadreDeTodo implements Peleable {
 	}
 
 	/**
-	 * Retorna un entero. Que la cantidad de experiencia que debe sumarse al
-	 * Personaje que produjo la disminución de la salud del NPC a 0. La misma
-	 * sera MULTIPLCADOREXPNPC veces el valor del atributo nivel
+	 * Retorna un entero. Que la cantidad de experiencia que debe sumarse al Personaje que produjo la disminución de la salud del NPC a 0. La misma sera MULTIPLCADOREXPNPC veces el valor del atributo nivel
 	 * 
 	 * @return Cantidad de experiencia a otorgar
 	 */
@@ -104,8 +99,7 @@ public class NonPlayableCharacter extends MadreDeTodo implements Peleable {
 	}
 
 	/**
-	 * Retorna un booleano. Que indica si el NPC esta vivo, evaluando si el
-	 * mismo tiene salud mayor a 0.
+	 * Retorna un booleano. Que indica si el NPC esta vivo, evaluando si el mismo tiene salud mayor a 0.
 	 * 
 	 * @return true si el NPC está vivo, false para lo contrario.
 	 */
@@ -135,8 +129,7 @@ public class NonPlayableCharacter extends MadreDeTodo implements Peleable {
 	}
 
 	/**
-	 * Método que, dependiendo de MyRandom.nextdouble() y NUMEROPARAATACAR.
-	 * Puede ejecutar un ataque mejorado por el atributo MULTIPLICADORFUERZA
+	 * Método que, dependiendo de MyRandom.nextdouble() y NUMEROPARAATACAR. Puede ejecutar un ataque mejorado por el atributo MULTIPLICADORFUERZA
 	 * 
 	 * @param atacado
 	 *            Peleable que recibe el ataque
@@ -152,8 +145,7 @@ public class NonPlayableCharacter extends MadreDeTodo implements Peleable {
 	}
 
 	/**
-	 * Dependiendo de MyRandom.nextdouble() y NUMEROPARASERATACADO. Puede
-	 * disminuir el daño dependiendo del atributo DIVISORDEDEFENSA.
+	 * Dependiendo de MyRandom.nextdouble() y NUMEROPARASERATACADO. Puede disminuir el daño dependiendo del atributo DIVISORDEDEFENSA.
 	 * 
 	 * @param danio
 	 *            valor a ser descontado del atributo salud.

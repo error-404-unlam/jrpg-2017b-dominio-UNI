@@ -3,7 +3,12 @@ package tests_dominio;
 import org.junit.Assert;
 import org.junit.Test;
 
-import dominio.*;
+import dominio.Asesino;
+import dominio.Elfo;
+import dominio.Guerrero;
+import dominio.Hechicero;
+import dominio.Humano;
+import dominio.Orco;
 
 public class TestPersonaje {
 
