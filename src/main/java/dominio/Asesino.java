@@ -2,10 +2,7 @@
 package dominio;
 
 /**
- * La clase Asesino es una casta de Personaje. Hereda de la clase Casta posee
- * dos constructores. El otro constructor, llama al constructor de la clase
- * padre (Casta) pasándole los argumentos recibidos por el constructor hijo y
- * luego inicializa la variable nombreCasta
+ * La clase Asesino es una casta de Personaje. Hereda de la clase Casta posee dos constructores. El otro constructor, llama al constructor de la clase padre (Casta) pasándole los argumentos recibidos por el constructor hijo y luego inicializa la variable nombreCasta
  */
 
 public class Asesino extends Casta {
@@ -27,10 +24,7 @@ public class Asesino extends Casta {
 	private static final double PROBEVITARDANIO = 0.5;
 
 	/**
-	 * La clase Asesino es una casta de Personaje. hereda de la clase Casta
-	 * posee dos constructores. El otro constructor, llama al constructor de la
-	 * clase padre (Casta) pasándole los argumentos recibidos por el constructor
-	 * hijo y luego inicializa la variable nombreCasta
+	 * La clase Asesino es una casta de Personaje. hereda de la clase Casta posee dos constructores. El otro constructor, llama al constructor de la clase padre (Casta) pasándole los argumentos recibidos por el constructor hijo y luego inicializa la variable nombreCasta
 	 * 
 	 * @param probCrit
 	 *            Probabilidad de que el personaje realice un golpe crítico
@@ -45,29 +39,19 @@ public class Asesino extends Casta {
 	}
 
 	/**
-	 * El constructor por defecto, llama al constructor por defecto. padre
-	 * (Casta), inicializando probabilidadGolpeCritico, probabilidadEvitarDaño,
-	 * dañoCritico, con valores predeterminados.
+	 * El constructor por defecto, llama al constructor por defecto. padre (Casta), inicializando probabilidadGolpeCritico, probabilidadEvitarDaño, dañoCritico, con valores predeterminados.
 	 */
 	public Asesino() {
 		super();
 	}
 
 	/**
-	 * Retorna un booleano. Dependiendo de si se realizó exitosamente o no el
-	 * ataque. La primera condición para que el ataque pueda realizarse es que
-	 * el atacante(caster) posea 10 o más del atributo energia ya que estos se
-	 * descuentan seguido de comprobar que los posee, de lo contrario el ataque
-	 * no será posible y se retornará false De ser posible el ataque, se llama
-	 * al método serAtacado() del argumento atacado el cual actuará de cierta
-	 * manera dependiendo de que clase sea el argumento atacado
+	 * Retorna un booleano. Dependiendo de si se realizó exitosamente o no el ataque. La primera condición para que el ataque pueda realizarse es que el atacante(caster) posea 10 o más del atributo energia ya que estos se descuentan seguido de comprobar que los posee, de lo contrario el ataque no será posible y se retornará false De ser posible el ataque, se llama al método serAtacado() del argumento atacado el cual actuará de cierta manera dependiendo de que clase sea el argumento atacado
 	 * 
 	 * @param caster
 	 *            Personaje atacante
 	 * @param atacado
-	 *            puede recibir como argumento una instancia de Personaje o de
-	 *            NPC (NonPlayableCharacter) ya que ambas implementan la
-	 *            interface Peleable
+	 *            puede recibir como argumento una instancia de Personaje o de NPC (NonPlayableCharacter) ya que ambas implementan la interface Peleable
 	 * @return retorna si el ataque fue realizado con éxito o no.
 	 */
 	@Override
@@ -82,16 +66,10 @@ public class Asesino extends Casta {
 	}
 
 	/**
-	 * Retorna un booleano. Dependiendo de si se realizó exitosamente o no el
-	 * ataque. La primera condición para que el ataque pueda realizarse es que
-	 * el atacante(caster) posea 10 o más del atributo energia ya que estos se
-	 * descuentan seguido de comprobar que los posee, de lo contrario el ataque
-	 * no será posible y se retornará false
+	 * Retorna un booleano. Dependiendo de si se realizó exitosamente o no el ataque. La primera condición para que el ataque pueda realizarse es que el atacante(caster) posea 10 o más del atributo energia ya que estos se descuentan seguido de comprobar que los posee, de lo contrario el ataque no será posible y se retornará false
 	 * 
 	 * @param caster
-	 *            Personaje que realiza el ataque, en este caso no es un ataque
-	 *            si no un aumento en las caracteristicas del caster en este
-	 *            caso incrementa el atributo probabilidadEvitarDaño
+	 *            Personaje que realiza el ataque, en este caso no es un ataque si no un aumento en las caracteristicas del caster en este caso incrementa el atributo probabilidadEvitarDaño
 	 * @param atacado
 	 *            no cumple función alguna dentro de este método
 	 * @return retorna si el ataque fue realizado con éxito o no.
@@ -125,8 +103,7 @@ public class Asesino extends Casta {
 	}
 
 	/**
-	 * Retorna un entero. Que otorga el bonus de destreza perteneciente a esta
-	 * casta.
+	 * Retorna un entero. Que otorga el bonus de destreza perteneciente a esta casta.
 	 * 
 	 * @return Retorna la destreza extra de la casta.
 	 */
@@ -136,8 +113,7 @@ public class Asesino extends Casta {
 	}
 
 	/**
-	 * Retorna un entero. Que otorga el bonus de fuerza perteneciente a esta
-	 * casta.
+	 * Retorna un entero. Que otorga el bonus de fuerza perteneciente a esta casta.
 	 * 
 	 * @return Retorna 0 para esta casta.
 	 */
@@ -147,8 +123,7 @@ public class Asesino extends Casta {
 	}
 
 	/**
-	 * Retorna un entero. Que otorga el bonus de inteligencia perteneciente a
-	 * esta casta.
+	 * Retorna un entero. Que otorga el bonus de inteligencia perteneciente a esta casta.
 	 * 
 	 * @return Retorna 0 para esta casta.
 	 */
@@ -168,8 +143,7 @@ public class Asesino extends Casta {
 	}
 
 	/**
-	 * Retorna un vector de string. Con los nombres de las habilidades de la
-	 * casta.
+	 * Retorna un vector de string. Con los nombres de las habilidades de la casta.
 	 * 
 	 * @return Retorna nombres de las habilidades propias de la casta.
 	 */

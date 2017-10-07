@@ -3,7 +3,8 @@ package tests_dominio;
 import org.junit.Assert;
 import org.junit.Test;
 
-import dominio.*;
+import dominio.Guerrero;
+import dominio.Humano;
 
 public class TestAtaqueCritico {
 
