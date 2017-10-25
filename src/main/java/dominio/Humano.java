@@ -90,12 +90,13 @@ public class Humano extends Personaje {
 	 */
 	@Override
 	public final boolean habilidadRaza1(final Peleable atacado) {
+		boolean tieneEnergia = false;
 		if (this.getEnergia() >= ENERGIAMINIMA) {
 			this.reducirEnergia(ENERGIAMINIMA);
+			tieneEnergia = true;
 			atacado.setAtaque(atacado.getAtaque() + this.getMagia());
-			return true;
 		}
-		return false;
+		return tieneEnergia;
 	}
 
 	/**
