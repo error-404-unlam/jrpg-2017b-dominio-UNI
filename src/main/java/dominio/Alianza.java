@@ -4,8 +4,7 @@ package dominio;
 import java.util.LinkedList;
 
 /**
- * La clase Alianza tiene como función agrupar a los jugadores. mediante una
- * LinkedList de Personajes
+ * La clase Alianza tiene como función agrupar a los jugadores. mediante una LinkedList de Personajes
  */
 public class Alianza {
 	/**
@@ -18,8 +17,7 @@ public class Alianza {
 	private LinkedList<Personaje> aliados;
 
 	/**
-	 * La clase Alianza tiene como función agrupar a los jugadores. mediante una
-	 * LinkedList de Personajes
+	 * La clase Alianza tiene como función agrupar a los jugadores. mediante una LinkedList de Personajes
 	 * 
 	 * @param nombre
 	 *            Nombre que se le dará a la alianza
@@ -30,8 +28,7 @@ public class Alianza {
 	}
 
 	/**
-	 * Se encarga de retornar la lista. Que contiene los personajes
-	 * pertenecientes a la alianza.
+	 * Se encarga de retornar la lista. Que contiene los personajes pertenecientes a la alianza.
 	 * 
 	 * @return Retorna la lista de aliados.
 	 */
@@ -59,8 +56,7 @@ public class Alianza {
 	}
 
 	/**
-	 * Método void que agrega un nuevo Personaje a la LinkedList aliados.
-	 * Utilizando el método add() de la LinkedList
+	 * Método void que agrega un nuevo Personaje a la LinkedList aliados. Utilizando el método add() de la LinkedList
 	 * 
 	 * @param pj
 	 *            Personaje a agregarse a la lista de aliados

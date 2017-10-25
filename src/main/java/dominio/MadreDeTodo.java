@@ -4,8 +4,7 @@ package dominio;
 import java.util.ArrayList;
 
 /**
- * Clase abstracta. Que tiene como funcion tener los atributos que comparten las
- * clases NPC y Personaje
+ * Clase abstracta. Que tiene como funcion tener los atributos que comparten las clases NPC y Personaje
  */
 public abstract class MadreDeTodo {
 
@@ -33,8 +32,7 @@ public abstract class MadreDeTodo {
 	protected ArrayList<Item> items = new ArrayList<Item>();
 
 	/**
-	 * Clase abstracta. Que tiene como funcion tener los atributos que comparten
-	 * las clases NPC y Personaje
+	 * Clase abstracta. Que tiene como funcion tener los atributos que comparten las clases NPC y Personaje
 	 * 
 	 * @param fuerza
 	 *            valor otorgado por el constructor de NPC o Personaje.
@@ -90,8 +88,7 @@ public abstract class MadreDeTodo {
 	}
 
 	/**
-	 * Método void que sobreescribe el atributo nombre. Con el valor que se
-	 * ingresa por parámetro.
+	 * Método void que sobreescribe el atributo nombre. Con el valor que se ingresa por parámetro.
 	 * 
 	 * @param nombre
 	 *            valor a sobreescribir
@@ -101,8 +98,7 @@ public abstract class MadreDeTodo {
 	}
 
 	/**
-	 * Método void que aumenta la fuerza del personaje o NPC. Con el valor que
-	 * se ingresa por parámetro.
+	 * Método void que aumenta la fuerza del personaje o NPC. Con el valor que se ingresa por parámetro.
 	 * 
 	 * @param aumento
 	 *            fuerza a aumentar.

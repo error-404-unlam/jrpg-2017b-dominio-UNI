@@ -4,14 +4,11 @@ package dominio;
 import java.io.Serializable;
 
 /**
- * Clase abstracta de la cual heredarán las clases Asesion,Guerrero,Hechicero.
- * Posee dos contructores, el contructor por defecto (no recibe argumentos),
- * pondrá los atributos con sus respectivos valores por defecto.
+ * Clase abstracta de la cual heredarán las clases Asesion,Guerrero,Hechicero. Posee dos contructores, el contructor por defecto (no recibe argumentos), pondrá los atributos con sus respectivos valores por defecto.
  */
 public abstract class Casta implements Serializable {
 	/**
-	 * Numero que indica probabilidad. Del personaje de realizar un golpe
-	 * critico.
+	 * Numero que indica probabilidad. Del personaje de realizar un golpe critico.
 	 */
 	private double probabilidadGolpeCritico;
 	/**
@@ -36,10 +33,7 @@ public abstract class Casta implements Serializable {
 	private static final double DANIOCRITICO = 1.5;
 
 	/**
-	 * Clase abstracta de la cual heredarán las clases
-	 * Asesion,Guerrero,Hechicero. Posee dos contructores, el contructor por
-	 * defecto (no recibe argumentos), pondrá los atributos con sus respectivos
-	 * valores por defecto.
+	 * Clase abstracta de la cual heredarán las clases Asesion,Guerrero,Hechicero. Posee dos contructores, el contructor por defecto (no recibe argumentos), pondrá los atributos con sus respectivos valores por defecto.
 	 */
 	public Casta() {
 		this.probabilidadGolpeCritico = PROBEVITARGOLPC;
@@ -48,8 +42,7 @@ public abstract class Casta implements Serializable {
 	}
 
 	/**
-	 * El constructor asignará a cada atributo, el valor correspondiente que
-	 * será el que se reciba por argumento.
+	 * El constructor asignará a cada atributo, el valor correspondiente que será el que se reciba por argumento.
 	 * 
 	 * @param probCrit
 	 *            Probabilidad de que el personaje realice un golpe crítico
@@ -71,8 +64,7 @@ public abstract class Casta implements Serializable {
 	 *            Personaje atacante.
 	 * @param atacado
 	 *            Personaje que recibirá el ataque.
-	 * @return Retornará true si el ataque fue realizado exitosamente, false de
-	 *         lo contrario.
+	 * @return Retornará true si el ataque fue realizado exitosamente, false de lo contrario.
 	 */
 	public abstract boolean habilidad1(Personaje caster, Peleable atacado);
 
@@ -104,8 +96,7 @@ public abstract class Casta implements Serializable {
 	 *            Personaje atacante.
 	 * @param atacado
 	 *            Personaje que recibirá el ataque.
-	 * @return Retornará true si el ataque fue realizado exitosamente, false de
-	 *         lo contrario.
+	 * @return Retornará true si el ataque fue realizado exitosamente, false de lo contrario.
 	 */
 	public abstract boolean habilidad2(Personaje caster, Peleable atacado);
 
@@ -116,8 +107,7 @@ public abstract class Casta implements Serializable {
 	 *            Personaje atacante.
 	 * @param atacado
 	 *            Personaje que recibirá el ataque.
-	 * @return Retornará true si el ataque fue realizado exitosamente, false de
-	 *         lo contrario.
+	 * @return Retornará true si el ataque fue realizado exitosamente, false de lo contrario.
 	 */
 	public abstract boolean habilidad3(Personaje caster, Peleable atacado);
 
@@ -145,8 +135,7 @@ public abstract class Casta implements Serializable {
 	}
 
 	/**
-	 * Método void que sobreescribe el atributo probabilidadGolpeCritico. con el
-	 * valor que se ingresa por parámetro.
+	 * Método void que sobreescribe el atributo probabilidadGolpeCritico. con el valor que se ingresa por parámetro.
 	 * 
 	 * @param probabilidadGolpeCritico
 	 *            Valor que tendra probabilidadGolpeCritico
@@ -165,8 +154,7 @@ public abstract class Casta implements Serializable {
 	}
 
 	/**
-	 * Método void que sobreescribe el atributo probabilidadEvitarDaño. con el
-	 * valor que se ingresa por parámetro.
+	 * Método void que sobreescribe el atributo probabilidadEvitarDaño. con el valor que se ingresa por parámetro.
 	 * 
 	 * @param probabilidadEvitarDanio
 	 *            Valor que tendra probabilidadEvitarDaño.
@@ -185,8 +173,7 @@ public abstract class Casta implements Serializable {
 	}
 
 	/**
-	 * Método void que sobreescribe el atributo dañoCritico. con el valor que se
-	 * ingresa por parámetro.
+	 * Método void que sobreescribe el atributo dañoCritico. con el valor que se ingresa por parámetro.
 	 * 
 	 * @param danioCritico
 	 *            Valor que tendra dañoCritico
@@ -196,8 +183,7 @@ public abstract class Casta implements Serializable {
 	}
 
 	/**
-	 * Método void que aumenta el atributo probabilidadEvitarDaño. con el valor
-	 * que se ingresa por parámetro.
+	 * Método void que aumenta el atributo probabilidadEvitarDaño. con el valor que se ingresa por parámetro.
 	 * 
 	 * @param bonus
 	 *            bonficador de evitar daño

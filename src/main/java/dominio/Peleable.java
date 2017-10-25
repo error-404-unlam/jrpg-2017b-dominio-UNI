@@ -2,8 +2,7 @@
 package dominio;
 
 /**
- * Interface implementada en las clases Personaje y NPC. Dependiendo qué clase
- * las esté implementando será como responderán
+ * Interface implementada en las clases Personaje y NPC. Dependiendo qué clase las esté implementando será como responderán
  */
 public interface Peleable {
 	/**
@@ -46,8 +45,7 @@ public interface Peleable {
 	/**
 	 * Metodo implementado en Personaje y NonPlayableCharacter.
 	 * 
-	 * @return Retorna el nivel del llamador multiplicado por la constante
-	 *         MULTIPLICADOREXP.
+	 * @return Retorna el nivel del llamador multiplicado por la constante MULTIPLICADOREXP.
 	 */
 	int otorgarExp();
 

@@ -2,8 +2,7 @@
 package dominio;
 
 /**
- * La clase Elfo hereda de la clase Personaje. Completa ciertos atributos que
- * estaban declarados en la clase Personaje, como por ejemplo habilidadesRaza[]
+ * La clase Elfo hereda de la clase Personaje. Completa ciertos atributos que estaban declarados en la clase Personaje, como por ejemplo habilidadesRaza[]
  */
 public class Elfo extends Personaje {
 	/**
@@ -20,9 +19,7 @@ public class Elfo extends Personaje {
 	private static final int BONUSENERGIA = 10;
 
 	/**
-	 * La clase Elfo hereda de la clase Personaje. Completa ciertos atributos
-	 * que estaban declarados en la clase Personaje, como por ejemplo
-	 * habilidadesRaza[]
+	 * La clase Elfo hereda de la clase Personaje. Completa ciertos atributos que estaban declarados en la clase Personaje, como por ejemplo habilidadesRaza[]
 	 * 
 	 * @param nombre
 	 *            Indica el nombre el personaje
@@ -36,9 +33,7 @@ public class Elfo extends Personaje {
 	}
 
 	/**
-	 * La clase Elfo hereda de la clase Personaje. Completa ciertos atributos
-	 * que estaban declarados en la clase Personaje, como por ejemplo
-	 * habilidadesRaza[] Recibe la mayoría de los atributos
+	 * La clase Elfo hereda de la clase Personaje. Completa ciertos atributos que estaban declarados en la clase Personaje, como por ejemplo habilidadesRaza[] Recibe la mayoría de los atributos
 	 * 
 	 * @param nombre
 	 *            Nombre del personaje
@@ -66,17 +61,10 @@ public class Elfo extends Personaje {
 	}
 
 	/**
-	 * Retorna un booleano dependiendo de si se realizó exitosamente o no el
-	 * ataque. La primera condición para que el ataque pueda realizarse es que
-	 * el atacante(caster) posea 10 o más del atributo energia ya que estos se
-	 * descuentan seguido de comprobar que los posee, de lo contrario el ataque
-	 * no será posible y se retornará false El método serAtacado() posee como
-	 * argumento la suma de la fuerza del atacante y el nivel del mismo
-	 * multiplicado por 10
+	 * Retorna un booleano dependiendo de si se realizó exitosamente o no el ataque. La primera condición para que el ataque pueda realizarse es que el atacante(caster) posea 10 o más del atributo energia ya que estos se descuentan seguido de comprobar que los posee, de lo contrario el ataque no será posible y se retornará false El método serAtacado() posee como argumento la suma de la fuerza del atacante y el nivel del mismo multiplicado por 10
 	 * 
 	 * @param atacado
-	 *            Instancia de Personaje o de NPC, dependiendo de cual sea, será
-	 *            como responda el método serAtacado()
+	 *            Instancia de Personaje o de NPC, dependiendo de cual sea, será como responda el método serAtacado()
 	 * @return retorna si se ejecutó correctamente la habilidad
 	 */
 	@Override
@@ -90,17 +78,10 @@ public class Elfo extends Personaje {
 	}
 
 	/**
-	 * Retorna un booleano dependiendo de si se realizó exitosamente o no el
-	 * ataque. La primera condición para que el ataque pueda realizarse es que
-	 * el atacante(caster) posea 10 o más del atributo energia ya que estos se
-	 * descuentan seguido de comprobar que los posee, de lo contrario el ataque
-	 * no será posible y se retornará false El método serAtacado() posee como
-	 * argumento un entero representando 1 o 0, dependiendo si el atributo magia
-	 * del llamador, es mayor a 0
+	 * Retorna un booleano dependiendo de si se realizó exitosamente o no el ataque. La primera condición para que el ataque pueda realizarse es que el atacante(caster) posea 10 o más del atributo energia ya que estos se descuentan seguido de comprobar que los posee, de lo contrario el ataque no será posible y se retornará false El método serAtacado() posee como argumento un entero representando 1 o 0, dependiendo si el atributo magia del llamador, es mayor a 0
 	 * 
 	 * @param atacado
-	 *            Instancia de Personaje o de NPC, dependiendo de cual sea, será
-	 *            como responda el método serAtacado()
+	 *            Instancia de Personaje o de NPC, dependiendo de cual sea, será como responda el método serAtacado()
 	 * @return retorna si se ejecutó correctamente la habilidad
 	 */
 	@Override
@@ -114,8 +95,7 @@ public class Elfo extends Personaje {
 	}
 
 	/**
-	 * Retorna un vector de string con los nombres de las habilidades de la
-	 * raza.
+	 * Retorna un vector de string con los nombres de las habilidades de la raza.
 	 * 
 	 * @return Retorna nombres de las habilidades propias de la raza.
 	 */

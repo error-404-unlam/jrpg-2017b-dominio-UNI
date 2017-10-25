@@ -5,8 +5,7 @@ package dominio;
  */
 public class RandomGenerator {
 	/**
-	 * Método que siempre retorna 0. Será sobreescrito por las clases que
-	 * heredan.
+	 * Método que siempre retorna 0. Será sobreescrito por las clases que heredan.
 	 * 
 	 * @param val
 	 *            No se usa
@@ -17,8 +16,7 @@ public class RandomGenerator {
 	}
 
 	/**
-	 * Método que siempre retorna 0. Será sobreescrito por las clases que
-	 * heredan.
+	 * Método que siempre retorna 0. Será sobreescrito por las clases que heredan.
 	 * 
 	 * @return Retorna 0
 	 */
