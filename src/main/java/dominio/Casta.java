@@ -14,11 +14,11 @@ public abstract class Casta implements Serializable {
 	/**
 	 * Numero que indica probabilidad. Del personaje de evitar un ataque.
 	 */
-	private double probabilidadEvitarDaño;
+	private double probabilidadEvitarDanio;
 	/**
 	 * Numero por el cual sera multiplicado el ataque.
 	 */
-	private double dañoCritico;
+	private double danioCritico;
 	/**
 	 * Probabilidad de evitar un golpe critico.
 	 */
@@ -37,8 +37,8 @@ public abstract class Casta implements Serializable {
 	 */
 	public Casta() {
 		this.probabilidadGolpeCritico = PROBEVITARGOLPC;
-		this.probabilidadEvitarDaño = PROBEVITARDANIO;
-		this.dañoCritico = DANIOCRITICO;
+		this.probabilidadEvitarDanio = PROBEVITARDANIO;
+		this.danioCritico = DANIOCRITICO;
 	}
 
 	/**
@@ -53,8 +53,8 @@ public abstract class Casta implements Serializable {
 	 */
 	public Casta(final double probCrit, final double evasion, final double danioCrit) {
 		this.probabilidadGolpeCritico = probCrit;
-		this.probabilidadEvitarDaño = evasion;
-		this.dañoCritico = danioCrit;
+		this.probabilidadEvitarDanio = evasion;
+		this.danioCritico = danioCrit;
 	}
 
 	/**
@@ -149,8 +149,8 @@ public abstract class Casta implements Serializable {
 	 * 
 	 * @return probabilidadEvitarDaño
 	 */
-	public final double getProbabilidadEvitarDaño() {
-		return probabilidadEvitarDaño;
+	public final double getProbabilidadEvitarDanio() {
+		return probabilidadEvitarDanio;
 	}
 
 	/**
@@ -159,8 +159,8 @@ public abstract class Casta implements Serializable {
 	 * @param probabilidadEvitarDanio
 	 *            Valor que tendra probabilidadEvitarDaño.
 	 */
-	public final void setProbabilidadEvitarDaño(final double probabilidadEvitarDanio) {
-		this.probabilidadEvitarDaño = probabilidadEvitarDanio;
+	public final void setProbabilidadEvitarDanio(final double probabilidadEvitarDanio) {
+		this.probabilidadEvitarDanio = probabilidadEvitarDanio;
 	}
 
 	/**
@@ -168,8 +168,8 @@ public abstract class Casta implements Serializable {
 	 * 
 	 * @return dañoCritico
 	 */
-	public final double getDañoCritico() {
-		return dañoCritico;
+	public final double getDanioCritico() {
+		return danioCritico;
 	}
 
 	/**
@@ -178,8 +178,8 @@ public abstract class Casta implements Serializable {
 	 * @param danioCritico
 	 *            Valor que tendra dañoCritico
 	 */
-	public final void setDañoCritico(final double danioCritico) {
-		this.dañoCritico = danioCritico;
+	public final void setDanioCritico(final double danioCritico) {
+		this.danioCritico = danioCritico;
 	}
 
 	/**
@@ -188,8 +188,8 @@ public abstract class Casta implements Serializable {
 	 * @param bonus
 	 *            bonficador de evitar daño
 	 */
-	public final void aumentarEvitarDaño(final double bonus) {
-		this.probabilidadEvitarDaño += bonus;
+	public final void aumentarEvitarDanio(final double bonus) {
+		this.probabilidadEvitarDanio += bonus;
 	}
 
 }

@@ -61,7 +61,7 @@ public class Asesino extends Casta {
 			caster.reducirEnergia(ENERGIAMINIMA);
 			tieneEnergia = true;
 		}
-		return tieneEnergia && (atacado.serAtacado((int) (caster.getAtaque() * caster.getCasta().getDañoCritico())) > 0);
+		return tieneEnergia && (atacado.serAtacado((int) (caster.getAtaque() * caster.getCasta().getDanioCritico())) > 0);
 	}
 
 	/**
@@ -79,10 +79,10 @@ public class Asesino extends Casta {
 		if (caster.getEnergia() >= ENERGIAMINIMA) {
 			caster.reducirEnergia(ENERGIAMINIMA);
 			tieneEnergia = true;
-			if (this.getProbabilidadEvitarDaño() + AUMENTARPROBEVITAR < 0.5) {
-				this.aumentarEvitarDaño(AUMENTARPROBEVITAR);
+			if (this.getProbabilidadEvitarDanio() + AUMENTARPROBEVITAR < 0.5) {
+				this.aumentarEvitarDanio(AUMENTARPROBEVITAR);
 			} else {
-				this.setProbabilidadEvitarDaño(PROBEVITARDANIO);
+				this.setProbabilidadEvitarDanio(PROBEVITARDANIO);
 			}
 		}
 		return tieneEnergia;

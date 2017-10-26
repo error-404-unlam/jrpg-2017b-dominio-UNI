@@ -358,7 +358,7 @@ public abstract class Personaje extends MadreDeTodo implements Peleable, Seriali
 	 */
 	public final void setClan(final Alianza clan) {
 		this.clan = clan;
-		clan.añadirPersonaje(this);
+		clan.aniadirPersonaje(this);
 	}
 
 	/**
@@ -472,7 +472,7 @@ public abstract class Personaje extends MadreDeTodo implements Peleable, Seriali
 	 * @return Retorna el golpe critico que puede realizar el personaje.
 	 */
 	public final int golpe_critico() {
-		return (int) (this.ataque * this.getCasta().getDañoCritico());
+		return (int) (this.ataque * this.getCasta().getDanioCritico());
 	}
 
 	/**
@@ -565,7 +565,7 @@ public abstract class Personaje extends MadreDeTodo implements Peleable, Seriali
 	@Override
 	public final int serAtacado(int danio) {
 
-		if (this.getRandom().nextDouble() >= this.getCasta().getProbabilidadEvitarDaño()) {
+		if (this.getRandom().nextDouble() >= this.getCasta().getProbabilidadEvitarDanio()) {
 			danio -= this.getDefensa();
 			if (danio > 0) {
 				if (salud <= danio) {
@@ -659,7 +659,7 @@ public abstract class Personaje extends MadreDeTodo implements Peleable, Seriali
 	 */
 	public final void crearAlianza(final String nombreAlianza) {
 		this.clan = new Alianza(nombreAlianza);
-		this.clan.añadirPersonaje(this);
+		this.clan.aniadirPersonaje(this);
 	}
 
 	/**
@@ -683,12 +683,12 @@ public abstract class Personaje extends MadreDeTodo implements Peleable, Seriali
 		if (this.clan == null) {
 			Alianza a = new Alianza("Alianza 1");
 			this.clan = a;
-			a.añadirPersonaje(this);
+			a.aniadirPersonaje(this);
 		}
 
 		if (nuevoAliado.clan == null) {
 			nuevoAliado.clan = this.clan;
-			this.clan.añadirPersonaje(nuevoAliado);
+			this.clan.aniadirPersonaje(nuevoAliado);
 			return true;
 		} else {
 			return false;
@@ -980,7 +980,7 @@ public abstract class Personaje extends MadreDeTodo implements Peleable, Seriali
 		salud = map.get("salud").intValue();
 		energia = map.get("energia").intValue();
 		defensa = map.get("defensa").intValue();
-		casta.setProbabilidadEvitarDaño(map.get("probEvitarDanio").doubleValue());
+		casta.setProbabilidadEvitarDanio(map.get("probEvitarDanio").doubleValue());
 	}
 
 	/**

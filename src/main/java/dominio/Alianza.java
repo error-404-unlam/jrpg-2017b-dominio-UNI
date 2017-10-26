@@ -61,7 +61,7 @@ public class Alianza {
 	 * @param pj
 	 *            Personaje a agregarse a la lista de aliados
 	 */
-	public final void añadirPersonaje(final Personaje pj) {
+	public final void aniadirPersonaje(final Personaje pj) {
 		aliados.add(pj);
 	}
 }
