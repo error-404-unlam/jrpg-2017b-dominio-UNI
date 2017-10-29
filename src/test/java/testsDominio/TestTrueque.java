@@ -1,4 +1,4 @@
-package tests_dominio;
+package testsDominio;
 
 import java.io.IOException;
 import java.util.ArrayList;

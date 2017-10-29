@@ -1,4 +1,4 @@
-package tests_dominio;
+package testsDominio;
 
 import org.junit.Assert;
 import org.junit.Test;
@@ -6,7 +6,9 @@ import org.junit.Test;
 import dominio.Alianza;
 
 public class TestAlianzaNuevo {
-
+	/**
+	 * 
+	 */
 	@Test
 	public void testGetNombre() {
 		Alianza ali = new Alianza("Los Isotopos");
