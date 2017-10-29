@@ -1,4 +1,3 @@
-
 package dominio;
 
 import java.util.ArrayList;
@@ -15,7 +14,8 @@ public abstract class MadreDeTodo {
 	/**
 	 * Defensa que recibira el personaje o npc.
 	 */
-	protected int defensa;
+	private int defensa;
+
 	/**
 	 * Nivel que recibira el personaje o npc.
 	 */
@@ -29,11 +29,10 @@ public abstract class MadreDeTodo {
 	 */
 	private RandomGenerator random;
 
-	protected ArrayList<Item> items = new ArrayList<Item>();
+	private ArrayList<Item> items = new ArrayList<Item>();
 
 	/**
 	 * Clase abstracta. Que tiene como funcion tener los atributos que comparten las clases NPC y Personaje
-	 * 
 	 * @param fuerza
 	 *            valor otorgado por el constructor de NPC o Personaje.
 	 * @param defensa
@@ -53,7 +52,6 @@ public abstract class MadreDeTodo {
 
 	/**
 	 * Método que devuelve la fuerza del personaje o NPC.
-	 * 
 	 * @return fuerza del personaje o NPC.
 	 */
 	public final int getFuerza() {
@@ -62,7 +60,6 @@ public abstract class MadreDeTodo {
 
 	/**
 	 * Método que devuelve la defensa del personaje o NPC.
-	 * 
 	 * @return defensa del personaje o NPC.
 	 */
 	public final int getDefensa() {
@@ -70,8 +67,16 @@ public abstract class MadreDeTodo {
 	}
 
 	/**
+	 * Método void que sobreescribe el atributo defensa. Con el valor que se ingresa por parámetro.
+	 * @param defensa
+	 *            valor a sobreescribir
+	 */
+	public void setDefensa(final int defensa) {
+		this.defensa = defensa;
+	}
+
+	/**
 	 * Método que devuelve el nivel del personaje o NPC.
-	 * 
 	 * @return nivel del personaje o NPC.
 	 */
 	public final int getNivel() {
@@ -80,7 +85,6 @@ public abstract class MadreDeTodo {
 
 	/**
 	 * Método que devuelve el nombre del personaje o NPC.
-	 * 
 	 * @return nombre del personaje o NPC.
 	 */
 	public final String getNombre() {
@@ -89,7 +93,6 @@ public abstract class MadreDeTodo {
 
 	/**
 	 * Método void que sobreescribe el atributo nombre. Con el valor que se ingresa por parámetro.
-	 * 
 	 * @param nombre
 	 *            valor a sobreescribir
 	 */
@@ -99,7 +102,6 @@ public abstract class MadreDeTodo {
 
 	/**
 	 * Método void que aumenta la fuerza del personaje o NPC. Con el valor que se ingresa por parámetro.
-	 * 
 	 * @param aumento
 	 *            fuerza a aumentar.
 	 */
@@ -116,7 +118,6 @@ public abstract class MadreDeTodo {
 
 	/**
 	 * Getter del Randomizador.
-	 * 
 	 * @return Retorna el randomizador.
 	 */
 	public final RandomGenerator getRandom() {
@@ -125,7 +126,6 @@ public abstract class MadreDeTodo {
 
 	/**
 	 * Setter del Randomizador.
-	 * 
 	 * @param random
 	 *            Randomizador que reemplazará al actual.
 	 */
@@ -135,7 +135,6 @@ public abstract class MadreDeTodo {
 
 	/**
 	 * Aumenta la defensa del personaje / npc.
-	 * 
 	 * @param bonus
 	 *            valor que se le agrega a la defensa.
 	 */
@@ -145,7 +144,6 @@ public abstract class MadreDeTodo {
 
 	/**
 	 * Reduce la defensa del personaje.
-	 * 
 	 * @param reduc
 	 *            Valor que se reduce la defensa.
 	 */
@@ -155,7 +153,6 @@ public abstract class MadreDeTodo {
 
 	/**
 	 * Metodo para anadir items sin violar el encapsulamiento.
-	 * 
 	 * @param i
 	 *            Item a agregar.
 	 */
@@ -165,7 +162,6 @@ public abstract class MadreDeTodo {
 
 	/**
 	 * Metodo para remover items sin violar el encapsulamiento.
-	 * 
 	 * @param i
 	 *            Item a eliminar.
 	 */
@@ -175,10 +171,18 @@ public abstract class MadreDeTodo {
 
 	/**
 	 * Método para obtener la lista de items.
-	 * 
 	 * @return Lista de items del personaje.
 	 */
 	public ArrayList<Item> getItems() {
 		return items;
+	}
+
+	/**
+	 * Método que asigna un objeto lista al atributo items.
+	 * @param items
+	 * 				lista de items a asignar.
+	 */
+	public void setItems(final ArrayList<Item> items) {
+		this.items = items;
 	}
 }

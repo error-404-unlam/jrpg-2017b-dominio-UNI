@@ -4,7 +4,9 @@ package dominio;
 import java.io.Serializable;
 
 /**
- * Clase abstracta de la cual heredarán las clases Asesion,Guerrero,Hechicero. Posee dos contructores, el contructor por defecto (no recibe argumentos), pondrá los atributos con sus respectivos valores por defecto.
+ * Clase abstracta de la cual heredarán las clases Asesion,Guerrero,Hechicero.
+ *  Posee dos contructores, el contructor por defecto (no recibe argumentos),
+ *  pondrá los atributos con sus respectivos valores por defecto.
  */
 public abstract class Casta implements Serializable {
 	/**
@@ -33,7 +35,9 @@ public abstract class Casta implements Serializable {
 	private static final double DANIOCRITICO = 1.5;
 
 	/**
-	 * Clase abstracta de la cual heredarán las clases Asesion,Guerrero,Hechicero. Posee dos contructores, el contructor por defecto (no recibe argumentos), pondrá los atributos con sus respectivos valores por defecto.
+	 * Clase abstracta de la cual heredarán las clases Asesion,Guerrero,Hechicero.
+	 *  Posee dos contructores, el contructor por defecto (no recibe argumentos),
+	 *  pondrá los atributos con sus respectivos valores por defecto.
 	 */
 	public Casta() {
 		this.probabilidadGolpeCritico = PROBEVITARGOLPC;
@@ -43,7 +47,6 @@ public abstract class Casta implements Serializable {
 
 	/**
 	 * El constructor asignará a cada atributo, el valor correspondiente que será el que se reciba por argumento.
-	 * 
 	 * @param probCrit
 	 *            Probabilidad de que el personaje realice un golpe crítico
 	 * @param evasion
@@ -59,7 +62,6 @@ public abstract class Casta implements Serializable {
 
 	/**
 	 * Método abstracto que será implementado en Asesino, Guerrero y Hechicero.
-	 * 
 	 * @param caster
 	 *            Personaje atacante.
 	 * @param atacado
@@ -70,28 +72,24 @@ public abstract class Casta implements Serializable {
 
 	/**
 	 * Método abstracto que será implementado en Asesino, Guerrero y Hechicero.
-	 * 
 	 * @return Retorna la fuerza extra de la casta.
 	 */
 	public abstract int recibirFuerzaBonus();
 
 	/**
 	 * Método abstracto que será implementado en Asesino, Guerrero y Hechicero.
-	 * 
 	 * @return Retorna la destreza extra de la casta.
 	 */
 	public abstract int recibirDestrezaBonus();
 
 	/**
 	 * Método abstracto que será implementado en Asesino, Guerrero y Hechicero.
-	 * 
 	 * @return Retorna la inteligencia extra de la casta.
 	 */
 	public abstract int recibirInteligenciaBonus();
 
 	/**
 	 * Método abstracto que será implementado en Asesino, Guerrero y Hechicero.
-	 * 
 	 * @param caster
 	 *            Personaje atacante.
 	 * @param atacado
@@ -102,7 +100,6 @@ public abstract class Casta implements Serializable {
 
 	/**
 	 * Método abstracto que será implementado en Asesino, Guerrero y Hechicero.
-	 * 
 	 * @param caster
 	 *            Personaje atacante.
 	 * @param atacado
@@ -113,21 +110,18 @@ public abstract class Casta implements Serializable {
 
 	/**
 	 * Método abstracto que será implementado en Asesino, Guerrero y Hechicero.
-	 * 
 	 * @return Retorna el nombre de la casta.
 	 */
 	public abstract String getNombreCasta();
 
 	/**
 	 * Método abstracto que será implementado en Asesino, Guerrero y Hechicero.
-	 * 
 	 * @return Retorna nombres de las habilidades propias de la casta.
 	 */
 	public abstract String[] getHabilidadesCasta();
 
 	/**
 	 * Método abstracto que será implementado en Asesino, Guerrero y Hechicero.
-	 * 
 	 * @return Retorna la probabilidad de critico propias de la casta.
 	 */
 	public final double getProbabilidadGolpeCritico() {
@@ -135,8 +129,8 @@ public abstract class Casta implements Serializable {
 	}
 
 	/**
-	 * Método void que sobreescribe el atributo probabilidadGolpeCritico. con el valor que se ingresa por parámetro.
-	 * 
+	 * Método void que sobreescribe el atributo probabilidadGolpeCritico.
+	 * con el valor que se ingresa por parámetro.
 	 * @param probabilidadGolpeCritico
 	 *            Valor que tendra probabilidadGolpeCritico
 	 */
@@ -146,7 +140,6 @@ public abstract class Casta implements Serializable {
 
 	/**
 	 * Método que devuelve la probabilidadEvitarDaño.
-	 * 
 	 * @return probabilidadEvitarDaño
 	 */
 	public final double getProbabilidadEvitarDanio() {
@@ -154,8 +147,8 @@ public abstract class Casta implements Serializable {
 	}
 
 	/**
-	 * Método void que sobreescribe el atributo probabilidadEvitarDaño. con el valor que se ingresa por parámetro.
-	 * 
+	 * Método void que sobreescribe el atributo probabilidadEvitarDaño.
+	 * con el valor que se ingresa por parámetro.
 	 * @param probabilidadEvitarDanio
 	 *            Valor que tendra probabilidadEvitarDaño.
 	 */
@@ -165,7 +158,6 @@ public abstract class Casta implements Serializable {
 
 	/**
 	 * Método que devuelve el dañoCritico.
-	 * 
 	 * @return dañoCritico
 	 */
 	public final double getDanioCritico() {
@@ -174,7 +166,6 @@ public abstract class Casta implements Serializable {
 
 	/**
 	 * Método void que sobreescribe el atributo dañoCritico. con el valor que se ingresa por parámetro.
-	 * 
 	 * @param danioCritico
 	 *            Valor que tendra dañoCritico
 	 */
@@ -184,7 +175,6 @@ public abstract class Casta implements Serializable {
 
 	/**
 	 * Método void que aumenta el atributo probabilidadEvitarDaño. con el valor que se ingresa por parámetro.
-	 * 
 	 * @param bonus
 	 *            bonficador de evitar daño
 	 */

@@ -2,7 +2,9 @@
 package dominio;
 
 /**
- * La clase Guerrero es una casta de Personaje. Hereda de la clase Casta. posee dos constructores. El constructor, llama al constructor de la clase padre (Casta), pasándole los argumentos recibidos por el constructor hijo
+ * La clase Guerrero es una casta de Personaje. Hereda de la clase Casta.
+ * posee dos constructores. El constructor, llama al constructor de la clase
+ * padre (Casta), pasándole los argumentos recibidos por el constructor hijo
  */
 public class Guerrero extends Casta {
 	/**
@@ -19,8 +21,9 @@ public class Guerrero extends Casta {
 	private static final int BONUSFUERZA = 5;
 
 	/**
-	 * La clase Guerrero es una casta de Personaje. Hereda de la clase Casta. posee dos constructores. El constructor, llama al constructor de la clase padre (Casta), pasándole los argumentos recibidos por el constructor hijo
-	 * 
+	 * La clase Guerrero es una casta de Personaje. Hereda de la clase Casta.
+	 * posee dos constructores. El constructor, llama al constructor de la clase
+	 * padre (Casta), pasándole los argumentos recibidos por el constructor hijo
 	 * @param probCrit
 	 *            Probabilidad de que el personaje realice un golpe crítico
 	 * @param evasion
@@ -33,15 +36,20 @@ public class Guerrero extends Casta {
 	}
 
 	/**
-	 * El constructor por defecto, llama al constructor por defecto. padre (Casta), inicializando probabilidadGolpeCritico, probabilidadEvitarDaño, dañoCritico, con valores predeterminados.
+	 * El constructor por defecto, llama al constructor por defecto. padre (Casta),
+	 * inicializando probabilidadGolpeCritico, probabilidadEvitarDaño, dañoCritico,
+	 * con valores predeterminados.
 	 */
 	public Guerrero() {
 		super();
 	}
 
 	/**
-	 * Retorna un booleano. Dependiendo de si se realizó exitosamente o no el ataque. La primera condición para que el ataque pueda realizarse es que el atacante(caster) posea 10 o más del atributo energia ya que estos se descuentan seguido de comprobar que los posee, de lo contrario el ataque no será posible y se retornará false
-	 * 
+	 * Retorna un booleano. Dependiendo de si se realizó exitosamente o no el ataque.
+	 * La primera condición para que el ataque pueda realizarse es que el
+	 * atacante(caster) posea 10 o más del atributo energia ya que estos se descuentan
+	 * seguido de comprobar que los posee, de lo contrario el ataque no será posible y
+	 * se retornará false
 	 * @param caster
 	 *            Personaje que realiza el ataque.
 	 * @param atacado
@@ -59,10 +67,15 @@ public class Guerrero extends Casta {
 	}
 
 	/**
-	 * Retorna un booleano. Dependiendo de si se realizó exitosamente o no el ataque. La primera condición para que el ataque pueda realizarse es que el atacante(caster) posea 10 o más del atributo energia ya que estos se descuentan seguido de comprobar que los posee, de lo contrario el ataque no será posible y se retornará false
-	 * 
+	 * Retorna un booleano. Dependiendo de si se realizó exitosamente o no el ataque.
+	 * La primera condición para que el ataque pueda realizarse es que el
+	 * atacante(caster) posea 10 o más del atributo energia ya que estos se descuentan
+	 * seguido de comprobar que los posee, de lo contrario el ataque no será posible y
+	 * se retornará false
 	 * @param caster
-	 *            Personaje que realiza el ataque, en este caso no es un ataque si no un aumento en las caracteristicas del caster en este caso la defensa (se agrega a la defensa actual el atributo magia)
+	 *            Personaje que realiza el ataque, en este caso no es un ataque si
+	 *            no un aumento en las caracteristicas del caster en este caso la
+	 *            defensa (se agrega a la defensa actual el atributo magia)
 	 * @param atacado
 	 *            no cumple función alguna dentro de este método
 	 * @return retorna si se ejecutó correctamente la habilidad
@@ -79,8 +92,12 @@ public class Guerrero extends Casta {
 	}
 
 	/**
-	 * Retorna un booleano. Dependiendo de si se realizó exitosamente o no el ataque. La primera condición para que el ataque pueda realizarse es que el atacante(caster) posea 10 o más del atributo energia ya que estos se descuentan seguido de comprobar que los posee, de lo contrario el ataque no será posible y se retornará false. Éste método sólo retornará true si el argumento atacado, es una instancia de Personaje.
-	 * 
+	 * Retorna un booleano. Dependiendo de si se realizó exitosamente o no el ataque.
+	 * La primera condición para que el ataque pueda realizarse es que el
+	 * atacante(caster) posea 10 o más del atributo energia ya que estos se descuentan
+	 * seguido de comprobar que los posee, de lo contrario el ataque no será posible y
+	 * se retornará false. Éste método sólo retornará true si el argumento atacado, es
+	 * una instancia de Personaje.
 	 * @param caster
 	 *            Personaje atacante
 	 * @param atacado
@@ -106,7 +123,6 @@ public class Guerrero extends Casta {
 
 	/**
 	 * Retorna un entero. Que otorga el bonus de fuerza perteneciente a esta casta.
-	 * 
 	 * @return Retorna la fuerza extra de la casta.
 	 */
 	@Override
@@ -117,7 +133,6 @@ public class Guerrero extends Casta {
 
 	/**
 	 * Retorna un entero que. Otorga el bonus de destreza perteneciente a esta casta.
-	 * 
 	 * @return Retorna 0 para esta casta.
 	 */
 	@Override
@@ -128,7 +143,6 @@ public class Guerrero extends Casta {
 
 	/**
 	 * Retorna un entero. Que otorga el bonus de inteligencia perteneciente a esta casta.
-	 * 
 	 * @return Retorna 0 para esta casta.
 	 */
 	@Override
@@ -138,7 +152,6 @@ public class Guerrero extends Casta {
 
 	/**
 	 * Retorna una string con el nombre de la casta.
-	 * 
 	 * @return Retorna el nombre de la casta.
 	 */
 	@Override
@@ -148,11 +161,10 @@ public class Guerrero extends Casta {
 
 	/**
 	 * Retorna un vector de string. Con los nombres de las habilidades de la casta.
-	 * 
 	 * @return Retorna nombres de las habilidades propias de la casta.
 	 */
 	@Override
 	public final String[] getHabilidadesCasta() {
-		return new String[] { "Ataque Doble", "Aumentar Defensa", "Ignorar Defensa" };
+		return new String[] {"Ataque Doble", "Aumentar Defensa", "Ignorar Defensa"};
 	}
 }

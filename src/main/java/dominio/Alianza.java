@@ -1,10 +1,10 @@
-
 package dominio;
 
 import java.util.LinkedList;
 
 /**
- * La clase Alianza tiene como función agrupar a los jugadores. mediante una LinkedList de Personajes
+ * La clase Alianza tiene como función agrupar a los jugadores. mediante una
+ * LinkedList de Personajes
  */
 public class Alianza {
 	/**
@@ -17,19 +17,19 @@ public class Alianza {
 	private LinkedList<Personaje> aliados;
 
 	/**
-	 * La clase Alianza tiene como función agrupar a los jugadores. mediante una LinkedList de Personajes
-	 * 
-	 * @param nombre
+	 * La clase Alianza tiene como función agrupar a los jugadores. mediante una
+	 * LinkedList de Personajes
+	 * @param nom
 	 *            Nombre que se le dará a la alianza
 	 */
-	public Alianza(final String nombre) {
-		this.nombre = nombre;
+	public Alianza(final String nom) {
+		this.nombre = nom;
 		this.aliados = new LinkedList<Personaje>();
 	}
 
 	/**
-	 * Se encarga de retornar la lista. Que contiene los personajes pertenecientes a la alianza.
-	 * 
+	 * Se encarga de retornar la lista. Que contiene los personajes pertenecientes a
+	 * la alianza.
 	 * @return Retorna la lista de aliados.
 	 */
 	public final LinkedList<Personaje> getAliados() {
@@ -38,7 +38,6 @@ public class Alianza {
 
 	/**
 	 * Se encarga de retornar el nombre de la alianza.
-	 * 
 	 * @return Retorna nombre de la alianza.
 	 */
 	public final String obtenerNombre() {
@@ -47,7 +46,6 @@ public class Alianza {
 
 	/**
 	 * Se encarga de eliminar un personaje de la alianza.
-	 * 
 	 * @param pj
 	 *            personaje a remover de la alianza.
 	 */
@@ -56,8 +54,8 @@ public class Alianza {
 	}
 
 	/**
-	 * Método void que agrega un nuevo Personaje a la LinkedList aliados. Utilizando el método add() de la LinkedList
-	 * 
+	 * Método void que agrega un nuevo Personaje a la LinkedList aliados. Utilizando
+	 * el método add() de la LinkedList
 	 * @param pj
 	 *            Personaje a agregarse a la lista de aliados
 	 */

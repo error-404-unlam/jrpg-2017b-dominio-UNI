@@ -15,7 +15,6 @@ public class MyRandomStub extends RandomGenerator {
 
 	/**
 	 * Constructor del MyRandomStub.
-	 * 
 	 * @param valDouble
 	 *            Double que se fijará en el objeto.
 	 * @param valInt
@@ -28,7 +27,6 @@ public class MyRandomStub extends RandomGenerator {
 
 	/**
 	 * Método que retorna el valor entero que se pasa en el constructor.
-	 * 
 	 * @param val
 	 *            valor que se pasa por parametro.
 	 * @return Entero que se pasa por parametro en el constructor.
@@ -40,7 +38,6 @@ public class MyRandomStub extends RandomGenerator {
 
 	/**
 	 * Método que retorna el valor entero que se pasa en el constructor.
-	 * 
 	 * @return Double que se pasa por parametro en el constructor.
 	 */
 	@Override
