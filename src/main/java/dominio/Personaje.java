@@ -979,7 +979,7 @@ public abstract class Personaje extends MadreDeTodo implements Peleable, Seriali
 	public final void actualizarAtributos(final HashMap<String, Number> map) {
 		salud = map.get("salud").intValue();
 		energia = map.get("energia").intValue();
-		defensa = map.get("defensa").intValue();
+		this.setDefensa(map.get("defensa").intValue());
 		casta.setProbabilidadEvitarDanio(map.get("probEvitarDanio").doubleValue());
 	}
 
@@ -1012,7 +1012,7 @@ public abstract class Personaje extends MadreDeTodo implements Peleable, Seriali
 		for (Item item : aPoner) {
 			aux.add(item);
 		}
-		this.items = aux;
+		this.setItems(aux);
 	}
 
 }
