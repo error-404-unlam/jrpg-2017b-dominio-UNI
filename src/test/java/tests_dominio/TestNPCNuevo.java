@@ -20,7 +20,7 @@ public class TestNPCNuevo {
 	}
 
 	@Test
-	public void testDañoMenorADef() {
+	public void testDanioMenorADef() {
 		NonPlayableCharacter npc = new NonPlayableCharacter("Pepe", 1, 1);
 		Assert.assertEquals(0, npc.serAtacado(1));
 	}
