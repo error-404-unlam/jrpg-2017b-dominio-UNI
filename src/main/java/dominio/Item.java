@@ -24,7 +24,6 @@ public class Item implements Serializable {
 
 	/**
 	 * Constructor del Item.
-	 * 
 	 * @param idItem
 	 *            Entero que representa el id del item.
 	 * @param nombre
@@ -48,7 +47,10 @@ public class Item implements Serializable {
 	 * @throws IOException
 	 *             Cuando no se encuentra la foto del item.
 	 */
-	public Item(final int idItem, final String nombre, final int wearLocation, final int bonusSalud, final int bonusEnergia, final int bonusFuerza, final int bonusDestreza, final int bonusInteligencia, final String foto, final String fotoEquipado) throws IOException {
+	public Item(final int idItem, final String nombre, final int wearLocation,
+			final int bonusSalud, final int bonusEnergia, final int bonusFuerza,
+			final int bonusDestreza, final int bonusInteligencia, final String foto,
+			final String fotoEquipado) throws IOException {
 		this.foto = foto;
 		this.idItem = idItem;
 		this.nombre = nombre;
@@ -63,7 +65,6 @@ public class Item implements Serializable {
 
 	/**
 	 * Método que retorna la foto del item.
-	 * 
 	 * @return retorna la foto del item.
 	 * @throws IOException
 	 *             Cuando no se encuentra la foto del item.
@@ -75,7 +76,6 @@ public class Item implements Serializable {
 
 	/**
 	 * Método que retorna el nombre del item.
-	 * 
 	 * @return Retorna el nombre del item.
 	 */
 	public String getNombre() {
@@ -84,7 +84,6 @@ public class Item implements Serializable {
 
 	/**
 	 * Método que retorna el bonus de salud del item.
-	 * 
 	 * @return Retorna bonus de salud.
 	 */
 	public int getBonusSalud() {
@@ -93,7 +92,6 @@ public class Item implements Serializable {
 
 	/**
 	 * Método que retorna el bonus de energia del item.
-	 * 
 	 * @return Retorna bonus de energia.
 	 */
 	public int getBonusEnergia() {
@@ -102,7 +100,6 @@ public class Item implements Serializable {
 
 	/**
 	 * Método que retorna el bonus de fuerza del item.
-	 * 
 	 * @return Retorna bonus de fuerza.
 	 */
 	public int getBonusFuerza() {
@@ -111,7 +108,6 @@ public class Item implements Serializable {
 
 	/**
 	 * Método que retorna el bonus de destreza del item.
-	 * 
 	 * @return Retorna bonus de destreza.
 	 */
 	public int getBonusDestreza() {
@@ -120,7 +116,6 @@ public class Item implements Serializable {
 
 	/**
 	 * Método que retorna el bonus de inteligencia del item.
-	 * 
 	 * @return Retorna bonus de inteligencia.
 	 */
 	public int getBonusInteligencia() {
@@ -129,7 +124,6 @@ public class Item implements Serializable {
 
 	/**
 	 * Método que retorna el id del item.
-	 * 
 	 * @return Retorna el id del item.
 	 */
 	public int getIdItem() {
