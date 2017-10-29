@@ -19,7 +19,6 @@ public class Alianza {
 	/**
 	 * La clase Alianza tiene como función agrupar a los jugadores. mediante una
 	 * LinkedList de Personajes
-	 * 
 	 * @param nom
 	 *            Nombre que se le dará a la alianza
 	 */
@@ -31,7 +30,6 @@ public class Alianza {
 	/**
 	 * Se encarga de retornar la lista. Que contiene los personajes pertenecientes a
 	 * la alianza.
-	 * 
 	 * @return Retorna la lista de aliados.
 	 */
 	public final LinkedList<Personaje> getAliados() {
@@ -40,7 +38,6 @@ public class Alianza {
 
 	/**
 	 * Se encarga de retornar el nombre de la alianza.
-	 * 
 	 * @return Retorna nombre de la alianza.
 	 */
 	public final String obtenerNombre() {
@@ -49,7 +46,6 @@ public class Alianza {
 
 	/**
 	 * Se encarga de eliminar un personaje de la alianza.
-	 * 
 	 * @param pj
 	 *            personaje a remover de la alianza.
 	 */
@@ -60,7 +56,6 @@ public class Alianza {
 	/**
 	 * Método void que agrega un nuevo Personaje a la LinkedList aliados. Utilizando
 	 * el método add() de la LinkedList
-	 * 
 	 * @param pj
 	 *            Personaje a agregarse a la lista de aliados
 	 */
