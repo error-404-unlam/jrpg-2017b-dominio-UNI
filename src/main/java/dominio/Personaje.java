@@ -631,7 +631,7 @@ public abstract class Personaje extends MadreDeTodo implements Peleable, Seriali
 			danioRecibido = energia;
 			energia = 0;
 		}
-		return danio;
+		return danioRecibido;
 	}
 
 	/**
