@@ -69,10 +69,10 @@ public class Hechicero extends Casta {
 		boolean tieneEnergia = false;
 		if (caster.getEnergia() >= ENERGIAMINIMA) {
 			caster.reducirEnergia(ENERGIAMINIMA);
-			tieneEnergia = true;
+			return (atacado.serAtacado((int) (caster.calcularPuntosDeMagia()
+					* MULTIPLICADORMAGIA)) > 0);
 		}
-		return tieneEnergia && (atacado.serAtacado((int) (caster.calcularPuntosDeMagia()
-				* MULTIPLICADORMAGIA)) > 0);
+		return false;
 	}
 
 	/**
