@@ -1,5 +1,7 @@
 package testsDominio;
 
+import java.util.LinkedList;
+
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -8,6 +10,7 @@ import dominio.Asesino;
 import dominio.Guerrero;
 import dominio.Humano;
 import dominio.MyRandomStub;
+import dominio.Personaje;
 
 public class TestAliarCombatir {
 
@@ -41,6 +44,7 @@ public class TestAliarCombatir {
 		Humano h = new Humano("Nicolas", new Guerrero(), 1);
 		Humano h2 = new Humano("Lautaro", new Guerrero(), 1);
 		Alianza a1 = new Alianza("Los CacheFC");
+
 		h.setRandom(new MyRandomStub(0.49, 3));
 		h2.setRandom(new MyRandomStub(0.49, 3));
 		Assert.assertNull(h2.getClan());
@@ -49,6 +53,12 @@ public class TestAliarCombatir {
 		Assert.assertNotNull(h.getClan());
 		h.aliar(h2);
 		Assert.assertTrue(h.getClan() == h2.getClan());
+
+		LinkedList <Personaje> listaAliadosRespuesta = new LinkedList<Personaje>();
+		listaAliadosRespuesta.add(h);
+		listaAliadosRespuesta.add(h2);
+		
+		Assert.assertEquals(listaAliadosRespuesta, a1.getAliados());
 	}
 
 }
