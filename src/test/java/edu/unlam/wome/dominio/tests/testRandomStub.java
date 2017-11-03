@@ -1,10 +1,10 @@
-package testsDominio;
+package edu.unlam.wome.dominio.tests;
 
 import org.junit.Assert;
 import org.junit.Test;
 
-import dominio.MyRandomStub;
-import dominio.RandomGenerator;
+import edu.unlam.wome.dominio.main.MyRandomStub;
+import edu.unlam.wome.dominio.main.RandomGenerator;
 
 public class testRandomStub {
 

@@ -1,11 +1,11 @@
-package testsDominio;
+package edu.unlam.wome.dominio.tests;
 
 import org.junit.Assert;
 import org.junit.Test;
 
-import dominio.Asesino;
-import dominio.Humano;
-import dominio.Personaje;
+import edu.unlam.wome.dominio.main.Asesino;
+import edu.unlam.wome.dominio.main.Humano;
+import edu.unlam.wome.dominio.main.Personaje;
 
 public class TestNivelExp {
 
