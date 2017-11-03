@@ -10,6 +10,11 @@ import edu.unlam.wome.dominio.main.Orco;
 
 public class TestDanio {
 
+	/**
+	 * Verifica al realizar un ataque contra
+	 * el enemigo, si el mismo muere, la salud
+	 * no baja de cero.
+	 */
 	@Test
 	public void testAtaqueComunYLaSaludNoBajeDe0() {
 		Humano h = new Humano("Nico", 100, 100, 100, 20, 30, new Guerrero(0.2, 0.3, 1.5), 0, 1, 1);
@@ -27,6 +32,10 @@ public class TestDanio {
 			Assert.assertTrue(o.getSalud() == 0);
 	}
 
+	/**
+	 * Verifica que un personaje muerto
+	 * no pueda atacar a otro personaje.
+	 */
 	@Test
 	public void testLosMuertosNoAtacan() {
 		Humano h = new Humano("Nico", 100, 100, 25, 0, 30, new Guerrero(0.2, 0, 1.5), 0, 1, 1);

@@ -11,6 +11,10 @@ import edu.unlam.wome.dominio.main.Personaje;
 
 public class TestEnemigosExperiencia {
 
+	/**
+	 * Verifica que al derrotar a un
+	 * NPC, el personaje reciba la experiencia.
+	 */
 	@Test
 	public void testPjvsNPC() {
 
@@ -26,6 +30,10 @@ public class TestEnemigosExperiencia {
 		Assert.assertTrue(h.getExperiencia() == 30);
 	}
 
+	/**
+	 * Verifica que el NPC, al tener mas nivel
+	 * otorga mas experiencia
+	 */
 	@Test
 	public void testMasFuerteMasExperiencia() {
 		NonPlayableCharacter npc = new NonPlayableCharacter("Gigante", 1, 0);
@@ -34,6 +42,13 @@ public class TestEnemigosExperiencia {
 		Assert.assertTrue(npc.otorgarExp() < npc2.otorgarExp());
 	}
 
+	/**
+	 * Verifica que cuando se realiza un
+	 * combate PVP, y el que tiene menos nivel
+	 * derrota al que tiene mas nivel, gana la
+	 * experiencia correspondiente por la diferencia
+	 * de levels
+	 */
 	@Test
 	public void testPjvsPj() {
 		Humano h = new Humano("Nicolas", new Guerrero(), 1);

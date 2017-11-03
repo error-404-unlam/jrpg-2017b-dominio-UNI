@@ -8,6 +8,10 @@ import edu.unlam.wome.dominio.main.Humano;
 
 public class TestAtributos {
 
+	/**
+	 * Verifica que al incrementar la
+	 * fuerza, incremente el ataque
+	 */
 	@Test
 	public void testIncrementarFuerza() {
 		Humano h = new Humano("Nicolas", new Guerrero(), 1);
@@ -17,6 +21,10 @@ public class TestAtributos {
 		Assert.assertTrue(h.getAtaque() > 22);
 	}
 
+	/**
+	 * Verifica que al incrementar la
+	 * destreza, incremente la defensa
+	 */
 	@Test
 	public void testIncrementarDestreza() {
 		Humano h = new Humano("Nicolas", new Guerrero(), 1);
@@ -26,6 +34,10 @@ public class TestAtributos {
 		Assert.assertTrue(h.getDefensa() > 10);
 	}
 
+	/**
+	 * Verifica que al incrementar la
+	 * inteligencia, incremente la magia
+	 */
 	@Test
 	public void testIncrementarInteligencia() {
 		Humano h = new Humano("Nicolas", new Guerrero(), 1);

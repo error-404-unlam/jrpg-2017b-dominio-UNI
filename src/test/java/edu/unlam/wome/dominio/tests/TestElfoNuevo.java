@@ -11,6 +11,11 @@ import edu.unlam.wome.dominio.main.Personaje;
 
 public class TestElfoNuevo {
 
+	/**
+	 * Verifica que el personaje
+	 * no pueda atacar con la habilidad 1
+	 *  sin energia
+	 */
 	@Test
 	public void testHabilidadRaza1() {
 		Personaje p1 = new Elfo("Ben Affleck", new Asesino(), 2);
@@ -21,6 +26,11 @@ public class TestElfoNuevo {
 		Assert.assertFalse(p1.habilidadRaza1(p2));
 	}
 
+	/**
+	 * verifica que el personaje
+	 * no pueda atacar con la habilidad 1
+	 * si no tiene fuerza
+	 */
 	@Test
 	public void testHabilidadRaza1S() {
 		Personaje p1 = new Elfo("Ben Affleck", new Asesino(), 2);
@@ -31,6 +41,11 @@ public class TestElfoNuevo {
 		Assert.assertFalse(p1.habilidadRaza1(p2));
 	}
 
+	/**
+	 * Verifica que el personaje
+	 * no puede atacar con la habilidad 2
+	 * sin energia
+	 */
 	@Test
 	public void testHabilidadRaza2() {
 		Personaje p1 = new Elfo("Ben Affleck", new Asesino(), 2);
@@ -41,6 +56,11 @@ public class TestElfoNuevo {
 		Assert.assertFalse(p1.habilidadRaza2(p2));
 	}
 
+	/**
+	 * Verifica que el personaje
+	 * no puede atacar con la habilidad 2
+	 * sin magia
+	 */
 	@Test
 	public void testHabilidadRaza2S() {
 		Personaje p1 = new Elfo("Ben Affleck", new Asesino(), 2);

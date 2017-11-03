@@ -12,6 +12,11 @@ import edu.unlam.wome.dominio.main.Personaje;
 
 public class TestGuerreroNuevo {
 
+	/**
+	 * Verifica que un guerrero sin
+	 * energia no pueda atacar con la
+	 * habilidad 1
+	 */
 	@Test
 	public void testHabilidad1() {
 		Personaje p1 = new Humano("Ben Affleck", new Guerrero(), 2);
@@ -22,6 +27,11 @@ public class TestGuerreroNuevo {
 		Assert.assertFalse(p1.habilidadCasta1(p2));
 	}
 
+	/**
+	 * Verifica que un guerrero sin
+	 * ataque no realice daño con la
+	 * habilidad 1
+	 */
 	@Test
 	public void testHabilidad1S() {
 		Personaje p1 = new Humano("Ben Affleck", new Guerrero(), 2);
@@ -32,6 +42,11 @@ public class TestGuerreroNuevo {
 		Assert.assertFalse(p1.habilidadCasta1(p2));
 	}
 
+	/**
+	 * Verifica que un guerrero sin
+	 * energia no pueda atacar con la
+	 * habilidad 2
+	 */
 	@Test
 	public void testHabilidad2() {
 		Personaje p1 = new Humano("Ben Affleck", new Guerrero(), 2);
@@ -42,6 +57,11 @@ public class TestGuerreroNuevo {
 		Assert.assertFalse(p1.habilidadCasta2(p2));
 	}
 
+	/**
+	 * Verifica que un guerrero sin
+	 * energia no pueda atacar con la
+	 * habilidad 3
+	 */
 	@Test
 	public void testHabilidad3() {
 		Personaje p1 = new Humano("Ben Affleck", new Guerrero(), 2);
@@ -52,6 +72,11 @@ public class TestGuerreroNuevo {
 		Assert.assertFalse(p1.habilidadCasta3(p2));
 	}
 
+	/**
+	 * Verifica que un guerrero sin
+	 * ataque no pueda atacar con la
+	 * habilidad 3
+	 */
 	@Test
 	public void testHabilidad3T() {
 		Personaje p1 = new Humano("Ben Affleck", new Guerrero(), 2);

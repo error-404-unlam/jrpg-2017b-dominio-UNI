@@ -9,6 +9,10 @@ import edu.unlam.wome.dominio.main.Personaje;
 
 public class TestAsignarPuntos {
 
+	/**
+	 * Verifica que al subir de nivel
+	 * aumenta la estadistica de Salud maxima
+	 */
 	@Test
 	public void testAumentarSalud_tope() {
 		Personaje.cargarTablaNivel();
@@ -19,6 +23,10 @@ public class TestAsignarPuntos {
 		Assert.assertTrue(h.getSaludTope() == 130);
 	}
 
+	/**
+	 * Verifica que al subir de nivel
+	 * aumenta la estadistica de energia maxima
+	 */
 	@Test
 	public void testAumentarEnergia_tope() {
 		Personaje.cargarTablaNivel();
@@ -29,6 +37,10 @@ public class TestAsignarPuntos {
 		Assert.assertTrue(h.getEnergiaTope() == 125);
 	}
 
+	/**
+	 * Verifica que no pueda exceder los 
+	 * 200 puntos de Fuerza, Destreza, Inteligencia
+	 */
 	@Test
 	public void testMasDe200Puntos() {
 		Humano h = new Humano("Nicolas", new Guerrero(), 1);

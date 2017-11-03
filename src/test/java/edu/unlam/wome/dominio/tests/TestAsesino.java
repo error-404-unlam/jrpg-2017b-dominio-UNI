@@ -10,10 +10,10 @@ import edu.unlam.wome.dominio.main.MyRandomStub;
 
 public class TestAsesino {
 
-	@Test
-	public void testRobar() {
-	}
-
+	/**
+	 * Verifica si realiza un golpe critico
+	 * el personaje
+	 */
 	@Test
 	public void testCritico() {
 		Humano h = new Humano("Nicolas", new Asesino(), 1);
@@ -27,6 +27,11 @@ public class TestAsesino {
 			Assert.assertEquals(105, h2.getSalud());
 	}
 
+	/**
+	 * Verifica que el personaje 
+	 * aumenta la probabilidad de
+	 * evasion hasta el maximo
+	 */
 	@Test
 	public void testProbEvasion() {
 		Humano h = new Humano("Nico", 100, 100, 25, 20, 30, new Asesino(0.2, 0.3, 1.5), 0, 1, 1);
