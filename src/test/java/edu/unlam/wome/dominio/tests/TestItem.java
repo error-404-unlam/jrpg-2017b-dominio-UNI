@@ -3,14 +3,9 @@ package edu.unlam.wome.dominio.tests;
 import java.io.IOException;
 
 import org.junit.Assert;
-import org.junit.Before;
 import org.junit.Test;
 
-import dominio.Casta;
-import dominio.Guerrero;
-import dominio.Humano;
-import dominio.Item;
-import dominio.Personaje;
+import edu.unlam.wome.dominio.main.Item;
 
 /**
  * Se comprueba el funcionamiento correcto de los metodos de la clase Item
