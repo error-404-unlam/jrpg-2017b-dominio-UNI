@@ -1,0 +1,38 @@
+package edu.unlam.wome.dominio.tests;
+
+import org.junit.Assert;
+import org.junit.Test;
+
+import edu.unlam.wome.dominio.main.Asesino;
+import edu.unlam.wome.dominio.main.Elfo;
+import edu.unlam.wome.dominio.main.Humano;
+import edu.unlam.wome.dominio.main.MyRandomStub;
+
+public class TestElfo {
+
+	@Test
+	public void testGolpeLevel() {
+		Elfo e = new Elfo("Nico", 100, 100, 25, 20, 30, new Asesino(0.2, 0.3, 1.5), 0, 3, 1);
+		Humano h = new Humano("Nico", 100, 100, 25, 20, 30, new Asesino(0.2, 0.3, 1.5), 0, 1, 1);
+		e.setRandom(new MyRandomStub(0.49, 3));
+		h.setRandom(new MyRandomStub(0.49, 3));
+		Assert.assertTrue(h.getSalud() == 100);
+		if (e.habilidadRaza1(h))
+			Assert.assertTrue(h.getSalud() < 100);
+		else
+			Assert.assertTrue(h.getSalud() == 100);
+	}
+
+	@Test
+	public void testAtaqueBosque() {
+		Elfo e = new Elfo("Nico", 100, 100, 25, 20, 30, new Asesino(0.2, 0.3, 1.5), 0, 3, 1);
+		Humano h = new Humano("Nico", 100, 100, 25, 20, 30, new Asesino(0.2, 0.3, 1.5), 0, 1, 1);
+		e.setRandom(new MyRandomStub(0.49, 3));
+		h.setRandom(new MyRandomStub(0.49, 3));
+		Assert.assertTrue(h.getSalud() == 100);
+		if (e.habilidadRaza2(h))
+			Assert.assertTrue(h.getSalud() < 100);
+		else
+			Assert.assertTrue(h.getSalud() == 100);
+	}
+}
