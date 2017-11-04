@@ -9,6 +9,10 @@ import edu.unlam.wome.dominio.main.Personaje;
 
 public class TestSubirNivel {
 
+	/**
+	 * Verifica que el personaje sube de nivel
+	 * correctamente
+	 */
 	@Test
 	public void testSubirdeNivel() {
 		Personaje.cargarTablaNivel();
@@ -18,6 +22,10 @@ public class TestSubirNivel {
 		Assert.assertTrue(h.getNivel() == 2);
 	}
 
+	/**
+	 * Verifica que el personaje no puede subir
+	 * mas del nivel 100
+	 */
 	@Test
 	public void testNivel100() {
 		Personaje.cargarTablaNivel();
@@ -29,6 +37,10 @@ public class TestSubirNivel {
 
 	}
 
+	/**
+	 * Se verifica que al ganar experiencia superior
+	 * a dos niveles, sube los 2 niveles correctamente.
+	 */
 	@Test
 	public void testGanarMuchaExp() {
 		Personaje.cargarTablaNivel();

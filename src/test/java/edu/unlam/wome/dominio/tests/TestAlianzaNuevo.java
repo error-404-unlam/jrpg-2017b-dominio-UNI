@@ -6,8 +6,9 @@ import org.junit.Test;
 import edu.unlam.wome.dominio.main.Alianza;
 
 public class TestAlianzaNuevo {
+	
 	/**
-	 * 
+	 * Comprueba la asignacion del nombre de la alianza.
 	 */
 	@Test
 	public void testGetNombre() {

@@ -8,6 +8,9 @@ import edu.unlam.wome.dominio.main.RandomGenerator;
 
 public class testRandomStub {
 
+	/**
+	 * Se verifica que MyRandomStub, funciona correctamente
+	 */
 	@Test
 	public void test() {
 		RandomGenerator ran = new MyRandomStub(3, 2);

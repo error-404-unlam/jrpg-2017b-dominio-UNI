@@ -12,6 +12,13 @@ import edu.unlam.wome.dominio.main.Orco;
 
 public class TestPersonaje {
 
+	/**
+	 * Verifica que los Humanos:
+	 * Guerreros
+	 * Hechiceros
+	 * Asesinos
+	 * Tengan sus estadisticas correspondientes
+	 */
 	@Test
 	public void testHumano() {
 		Humano h = new Humano("Nicolas", new Guerrero(), 1);
@@ -36,6 +43,13 @@ public class TestPersonaje {
 		Assert.assertTrue(h3.getInteligencia() == 10);
 	}
 
+	/**
+	 * Verifica que los Elfos:
+	 * Guerreros
+	 * Hechiceros
+	 * Asesinos
+	 * Tengan sus estadisticas correspondientes
+	 */
 	@Test
 	public void testElfo() {
 		Elfo e = new Elfo("Nicolas", new Guerrero(), 1);
@@ -60,6 +74,13 @@ public class TestPersonaje {
 		Assert.assertTrue(e3.getInteligencia() == 10);
 	}
 
+	/**
+	 * Verifica que los Orcos:
+	 * Guerreros
+	 * Hechiceros
+	 * Asesinos
+	 * Tengan sus estadisticas correspondientes
+	 */
 	@Test
 	public void testOrco() {
 		Orco o = new Orco("Nicolas", new Guerrero(), 1);

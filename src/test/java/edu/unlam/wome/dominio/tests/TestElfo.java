@@ -10,6 +10,11 @@ import edu.unlam.wome.dominio.main.MyRandomStub;
 
 public class TestElfo {
 
+	/**
+	 * Verifica que el ataque
+	 * "Golpe Level" funcione correctamente
+	 * de acuerdo al level del personaje
+	 */
 	@Test
 	public void testGolpeLevel() {
 		Elfo e = new Elfo("Nico", 100, 100, 25, 20, 30, new Asesino(0.2, 0.3, 1.5), 0, 3, 1);
@@ -23,6 +28,11 @@ public class TestElfo {
 			Assert.assertTrue(h.getSalud() == 100);
 	}
 
+	/**
+	 * Verifica que el ataque
+	 * "Ataque Bosque" funcione correctamente
+	 * de acuerdo al level del personaje
+	 */
 	@Test
 	public void testAtaqueBosque() {
 		Elfo e = new Elfo("Nico", 100, 100, 25, 20, 30, new Asesino(0.2, 0.3, 1.5), 0, 3, 1);

@@ -8,6 +8,10 @@ import edu.unlam.wome.dominio.main.Humano;
 
 public class TestAtaqueCritico {
 
+	/**
+	 * Verifica el golpe critico
+	 * del personaje
+	 */
 	@Test
 	public void testgolpeCrit() {
 		Humano h = new Humano("Nicolas", new Guerrero(), 1);

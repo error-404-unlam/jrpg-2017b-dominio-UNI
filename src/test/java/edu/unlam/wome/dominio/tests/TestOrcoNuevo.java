@@ -11,6 +11,10 @@ import edu.unlam.wome.dominio.main.Personaje;
 
 public class TestOrcoNuevo {
 
+	/**
+	 * Verifica que un Orco sin Energia
+	 * no pueda utilizar la habilidadRaza1
+	 */
 	@Test
 	public void testHabilidadRaza1() {
 		Personaje p1 = new Orco("Ben Affleck", new Asesino(), 2);
@@ -21,6 +25,10 @@ public class TestOrcoNuevo {
 		Assert.assertFalse(p1.habilidadRaza1(p2));
 	}
 
+	/**
+	 * Verifica que un Orco, sin defensa, no pueda
+	 * utilizar la habilidadRaza1
+	 */
 	@Test
 	public void testHabilidadRaza1S() {
 		Personaje p1 = new Orco("Ben Affleck", new Asesino(), 2);
@@ -31,6 +39,10 @@ public class TestOrcoNuevo {
 		Assert.assertFalse(p1.habilidadRaza1(p2));
 	}
 
+	/**
+	 * Verifica que un Orco sin energia, no pueda
+	 * utilizar la habilidadRaza2
+	 */
 	@Test
 	public void testHabilidadRaza2() {
 		Personaje p1 = new Orco("Ben Affleck", new Asesino(), 2);
@@ -41,6 +53,10 @@ public class TestOrcoNuevo {
 		Assert.assertFalse(p1.habilidadRaza2(p2));
 	}
 
+	/**
+	 * Verifica que un Orco sin fuerza, no pueda
+	 * utilizar la habilidadRaza2
+	 */
 	@Test
 	public void testHabilidadRaza2S() {
 		Personaje p1 = new Orco("Ben Affleck", new Asesino(), 2);

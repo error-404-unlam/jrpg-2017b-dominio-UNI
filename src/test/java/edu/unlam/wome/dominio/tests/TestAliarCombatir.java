@@ -14,6 +14,9 @@ import edu.unlam.wome.dominio.main.Personaje;
 
 public class TestAliarCombatir {
 
+	/**
+	 * Comprueba que 2 personajes forman una alianza
+	 */
 	@Test
 	public void testCrearAlianza() {
 		Humano h = new Humano("Nicolas", new Guerrero(), 1);
@@ -26,6 +29,11 @@ public class TestAliarCombatir {
 		Assert.assertNotNull(h2.getClan());
 	}
 
+	/**
+	 * Verifica que un personaje pueda atacar o no a otro
+	 * Dependiendo del rango en el que se encuentra
+	 * cuando es generado.
+	 */
 	@Test
 	public void testDaniar() {
 		Humano h = new Humano("Nicolas", new Guerrero(), 1);
@@ -39,6 +47,13 @@ public class TestAliarCombatir {
 			Assert.assertTrue(h2.getSalud() == 105);
 	}
 
+	/**
+	 * Verifica que un personaje se puede aliar a
+	 * una Alianza, y que a su vez, el pueda unir a 
+	 * otro personaje a su alianza.
+	 *  Verifica ademas que los dos pertenezcan a la
+	 *  misma alianza.
+	 */
 	@Test
 	public void testAliar() {
 		Humano h = new Humano("Nicolas", new Guerrero(), 1);

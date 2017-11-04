@@ -16,6 +16,10 @@ import edu.unlam.wome.dominio.main.Personaje;
 
 public class TestTrueque {
 
+	/**
+	 * Se verifa que se saquen y coloquen los items
+	 * correctos pertenecientes a las listas.
+	 */
 	@Test
 	public void testTrueque() {
 		Personaje p1 = new Humano("Ben Affleck", new Asesino(), 2);
@@ -26,6 +30,7 @@ public class TestTrueque {
 			Item item1 = new Item(20, "NombreItem1", 0, 10, 0, 0, 0, 0, "foto1", "fotoE1");
 			Item item3 = new Item(20, "NombreItem3", 0, 10, 0, 0, 0, 0, "foto3", "fotoE3");
 
+			//Agregados a la Lista
 			Item item5 = new Item(20, "NombreItem5", 0, 10, 0, 0, 0, 0, "foto5", "fotoE5");
 			Item item6 = new Item(20, "NombreItem6", 0, 10, 0, 0, 0, 0, "foto6", "fotoE6");
 
@@ -47,6 +52,10 @@ public class TestTrueque {
 
 	}
 
+	/**
+	 * Verifica que le saco los items correspondientes,
+	 * sin sacar items adicionales.
+	 */
 	@Test
 	public void testTrueque2() {
 		Personaje p1 = new Humano("Ben Affleck", new Asesino(), 2);

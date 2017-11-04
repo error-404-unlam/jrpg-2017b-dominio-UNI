@@ -12,6 +12,10 @@ import edu.unlam.wome.dominio.main.Personaje;
 
 public class TestHechieroNuevo {
 
+	/**
+	 * Verifica que un Hechicero sin
+	 * energia no pueda usar la habilidad3
+	 */
 	@Test
 	public void testHabilidad3() {
 		Personaje p1 = new Humano("Ben Affleck", new Hechicero(), 2);
@@ -22,6 +26,10 @@ public class TestHechieroNuevo {
 		Assert.assertFalse(p1.habilidadCasta3(p2));
 	}
 
+	/**
+	 * Verifica que un Hechicero sin energia
+	 * no pueda usar la habilidad 2
+	 */
 	@Test
 	public void testHabilidad2() {
 		Personaje p1 = new Humano("Ben Affleck", new Hechicero(), 2);
@@ -32,6 +40,10 @@ public class TestHechieroNuevo {
 		Assert.assertFalse(p1.habilidadCasta2(p2));
 	}
 
+	/**
+	 * Verifica que un Hechicero sin energia
+	 * no pueda usar la habilidad 1
+	 */
 	@Test
 	public void testHabilidad1() {
 		Personaje p1 = new Humano("Ben Affleck", new Hechicero(), 2);
@@ -42,6 +54,10 @@ public class TestHechieroNuevo {
 		Assert.assertFalse(p1.habilidadCasta1(p2));
 	}
 
+	/**
+	 * Verifica que un Hechicero sin inteligencia
+	 * no puede usar la habilidad 1
+	 */
 	@Test
 	public void testInstanceOfHorrible1() {
 		Personaje p1 = new Humano("Ben Affleck", new Hechicero(), 2);
@@ -53,6 +69,10 @@ public class TestHechieroNuevo {
 		Assert.assertFalse(p1.habilidadCasta1(npc));
 	}
 
+	/**
+	 * Verifica que un Hechicero no puede
+	 * curar a un NPC
+	 */
 	@Test
 	public void testInstanceOfHorrible2() {
 		Personaje p1 = new Humano("Ben Affleck", new Hechicero(), 2);
@@ -62,6 +82,10 @@ public class TestHechieroNuevo {
 		Assert.assertFalse(p1.habilidadCasta2(npc));
 	}
 
+	/**
+	 * Verifica que un Hechicero no puede
+	 * usar la habilidad 3 en un NPC
+	 */
 	@Test
 	public void testInstanceOfHorrible3() {
 		Personaje p1 = new Humano("Ben Affleck", new Hechicero(), 2);

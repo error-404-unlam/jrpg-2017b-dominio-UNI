@@ -10,6 +10,10 @@ import edu.unlam.wome.dominio.main.Personaje;
 
 public class TestAsesinoNuevo {
 
+	/**
+	 * Verifica que no pueda atacar
+	 * con la habilidad 1 sin energia
+	 */
 	@Test
 	public void testHabilidad1() {
 		Personaje p1 = new Humano("Ben Affleck", new Asesino(), 2);
@@ -20,6 +24,11 @@ public class TestAsesinoNuevo {
 		Assert.assertFalse(p1.habilidadCasta1(p2));
 	}
 
+	/**
+	 * Verifica que no pueda atacar
+	 * con la habilidad 1 si no tiene
+	 * ataque
+	 */
 	@Test
 	public void testHabilidad1S() {
 		Personaje p1 = new Humano("Ben Affleck", new Asesino(), 2);
@@ -30,6 +39,10 @@ public class TestAsesinoNuevo {
 		Assert.assertFalse(p1.habilidadCasta1(p2));
 	}
 
+	/**
+	 * Verifica que no pueda atacar
+	 * con la habilidad 2 sin energia
+	 */
 	@Test
 	public void testHabilidad2() {
 		Personaje p1 = new Humano("Ben Affleck", new Asesino(), 2);
@@ -40,6 +53,12 @@ public class TestAsesinoNuevo {
 		Assert.assertFalse(p1.habilidadCasta2(p2));
 	}
 
+	/**
+	 * Verifica que no puede atacar
+	 * con la habilidad casta 3, ya que
+	 * la misma no esta implementada,
+	 * puesto que es sobreescrita por Asesino.
+	 */
 	@Test
 	public void testHabilidad3() {
 		Personaje p1 = new Humano("Ben Affleck", new Asesino(), 2);

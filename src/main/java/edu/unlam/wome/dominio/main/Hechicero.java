@@ -66,13 +66,12 @@ public class Hechicero extends Casta {
 	 */
 	@Override
 	public final boolean habilidad1(final Personaje caster, final Peleable atacado) {
-		boolean tieneEnergia = false;
 		if (caster.getEnergia() >= ENERGIAMINIMA) {
 			caster.reducirEnergia(ENERGIAMINIMA);
-			tieneEnergia = true;
+			return (atacado.serAtacado((int) (caster.calcularPuntosDeMagia()
+					* MULTIPLICADORMAGIA)) > 0);
 		}
-		return tieneEnergia && (atacado.serAtacado((int) (caster.calcularPuntosDeMagia()
-				* MULTIPLICADORMAGIA)) > 0);
+		return false;
 	}
 
 	/**

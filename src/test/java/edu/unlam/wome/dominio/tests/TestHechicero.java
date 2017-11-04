@@ -11,6 +11,11 @@ import edu.unlam.wome.dominio.main.MyRandomStub;
 
 public class TestHechicero {
 
+	/**
+	 * Verifica que al usar el
+	 * hechizo "Curar" del hechicero,
+	 * cure al objetivo
+	 */
 	@Test
 	public void testCurar() {
 		Humano h = new Humano("Nico", 100, 100, 55, 20, 30, new Hechicero(0.2, 0.3, 1.5), 0, 1, 1);
@@ -24,6 +29,11 @@ public class TestHechicero {
 		Assert.assertTrue(e.getSalud() > 65);
 	}
 
+	/**
+	 * Verifica que al usar el hechizo
+	 * "Bola de Fuego" del Hechicero,
+	 * realice daño.
+	 */
 	@Test
 	public void testBolaDeFuego() {
 		Humano h = new Humano("Nico", 100, 100, 55, 20, 30, new Hechicero(0.2, 0.3, 1.5), 0, 1, 1);
@@ -37,6 +47,10 @@ public class TestHechicero {
 			Assert.assertTrue(e.getSalud() == 100);
 	}
 
+	/**
+	 * Verifica que el hechizo "Robar Energia y Salud"
+	 * del hechicero, devuelva salud y energia.
+	 */
 	@Test
 	public void testRobarEnergia_y_Salud() {
 		Humano h = new Humano("Nico", 100, 100, 55, 20, 50, new Hechicero(0.2, 0.3, 1.5), 0, 1, 1);
