@@ -81,7 +81,7 @@ public class Orco extends Personaje {
 			this.reducirEnergia(ENERGIAMINIMA);
 			return (atacado.serAtacado(this.getDefensa() * MULTIPLICADORDEFENSA) > 0);
 		}
-		return true;
+		return false;
 	}
 
 	/**
