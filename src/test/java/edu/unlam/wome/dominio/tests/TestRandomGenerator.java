@@ -7,6 +7,10 @@ import edu.unlam.wome.dominio.main.RandomGenerator;
 
 public class TestRandomGenerator {
 
+	/**
+	 * Se verifica que el random generator
+	 * funciona correctamente.
+	 */
 	@Test
 	public void test() {
 		RandomGenerator ran = new RandomGenerator();

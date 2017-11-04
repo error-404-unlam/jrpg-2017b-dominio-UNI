@@ -13,6 +13,10 @@ import edu.unlam.wome.dominio.main.Personaje;
 
 public class TestPersonajeNuevo {
 
+	/**
+	 * Verifica que los personajes creados,
+	 * distan 0.
+	 */
 	@Test
 	public void testDistancia() {
 		Personaje p1 = new Humano("Ben Affleck", new Asesino(), 2);
@@ -20,6 +24,10 @@ public class TestPersonajeNuevo {
 		Assert.assertEquals(0, p1.distanciaCon(p2), 0);
 	}
 
+	/**
+	 * Se verifica que dos personaje pertenecientes
+	 * a alianzas distintas, uno no puede aliar al otro
+	 */
 	@Test
 	public void testAliarYaTeniendoAlianza() {
 		Personaje p1 = new Humano("Ben Affleck", new Asesino(), 2);
@@ -29,6 +37,10 @@ public class TestPersonajeNuevo {
 		Assert.assertFalse(p1.aliar(p2));
 	}
 
+	/**
+	 * Verifica que un usuario pueda aliar a otro
+	 * a su alianza
+	 */
 	@Test
 	public void testAliarPorPrimeraVez() {
 		Personaje p1 = new Humano("Ben Affleck", new Asesino(), 2);
@@ -38,6 +50,10 @@ public class TestPersonajeNuevo {
 		Assert.assertTrue(p1.aliar(p2));
 	}
 
+	/**
+	 * Se verifica que un personaje puede
+	 * abandonar una alianza
+	 */
 	@Test
 	public void testSalirAlianza() {
 		Personaje p1 = new Humano("Ben Affleck", new Asesino(), 2);
@@ -48,6 +64,12 @@ public class TestPersonajeNuevo {
 		Assert.assertNull(p1.getClan());
 	}
 
+	/**
+	 * Se verifica que un personaje no recibe
+	 * daño si su defensa es mayor al daño recibido.
+	 * Se verifica que un personaje que le roban la salud,
+	 * por completo, muere.
+	 */
 	@Test
 	public void testSerRobado() {
 		Personaje p1 = new Humano("Ben Affleck", new Asesino(), 2);
@@ -58,6 +80,12 @@ public class TestPersonajeNuevo {
 		Assert.assertEquals(0, p1.getSalud());
 	}
 
+	/**
+	 * Se verifica que un personaje no recibe
+	 * daño si su defensa es mayor al daño recibido.
+	 * Se verifica que un personaje que es desenergizado
+	 * completamente.
+	 */
 	@Test
 	public void testSerDesenergizado() {
 		Personaje p1 = new Humano("Ben Affleck", new Asesino(), 2);
@@ -68,6 +96,10 @@ public class TestPersonajeNuevo {
 		Assert.assertEquals(0, p1.getEnergia());
 	}
 
+	/**
+	 * Verifica que al no tener la energia
+	 * suficiente, el usuario no puede atacar.
+	 */
 	@Test
 	public void testPuedoAtacar() {
 		Personaje p1 = new Humano("Ben Affleck", new Asesino(), 2);
@@ -77,6 +109,10 @@ public class TestPersonajeNuevo {
 		Assert.assertFalse(p1.puedeAtacar());
 	}
 
+	/**
+	 * Verifica que se realice el golpe critico
+	 * correctamente
+	 */
 	@Test
 	public void testAtacarGolpeCritico() {
 		Personaje p1 = new Humano("Ben Affleck", new Asesino(), 2);
@@ -90,6 +126,10 @@ public class TestPersonajeNuevo {
 		Assert.assertEquals(12, p1.atacar(p2));
 	}
 
+	/**
+	 * Verifica que el metodo reestablecerSalud,
+	 * recupera toda la salud del personaje.
+	 */
 	@Test
 	public void testRestablecerSalud() {
 		Personaje p1 = new Humano("Ben Affleck", new Asesino(), 2);
@@ -98,7 +138,10 @@ public class TestPersonajeNuevo {
 		p1.restablecerSalud();
 		Assert.assertEquals(105, p1.getSalud());
 	}
-
+	/**
+	 * Verifica que el metodo reestablecerEnergia,
+	 * recupera toda la Energia del personaje.
+	 */
 	@Test
 	public void testRestablecerEnergia() {
 		Personaje p1 = new Humano("Ben Affleck", new Asesino(), 2);
@@ -108,6 +151,10 @@ public class TestPersonajeNuevo {
 		Assert.assertEquals(105, p1.getEnergia());
 	}
 
+	/**
+	 * Verifica que al aumentar la evasion,
+	 * no recibe daño.
+	 */
 	@Test
 	public void testSerAtacado() {
 		Personaje p1 = new Humano("Ben Affleck", new Asesino(), 2);
@@ -119,6 +166,11 @@ public class TestPersonajeNuevo {
 		Assert.assertEquals(0, p1.serAtacado(900));
 	}
 
+	/**
+	 * Verifica que no se puede sobrenergizar,
+	 * Si se energiza con una energia superior a la maxima,
+	 * la energia maxima, no varia.
+	 */
 	@Test
 	public void testSerEnergizado() {
 		Personaje p1 = new Humano("Ben Affleck", new Asesino(), 2);
@@ -128,12 +180,20 @@ public class TestPersonajeNuevo {
 		Assert.assertEquals(105, p1.getEnergia());
 	}
 
+	/**
+	 * Verifica que se devuelve la raza
+	 * correctamente
+	 */
 	@Test
 	public void testNombreRaza() {
 		Personaje p1 = new Humano("Ben Affleck", new Asesino(), 2);
 		Assert.assertEquals("Humano", p1.getNombreRaza());
 	}
 
+	/**
+	 * Verifica que se setea la magia
+	 * correctamente
+	 */
 	@Test
 	public void testSetMagia() {
 		Personaje p1 = new Humano("Ben Affleck", new Asesino(), 2);
@@ -141,12 +201,19 @@ public class TestPersonajeNuevo {
 		Assert.assertEquals(20, p1.getMagia());
 	}
 
+	/**
+	 * Se verifica que la id del personaje
+	 * es la asignada en el constructor
+	 */
 	@Test
 	public void testGetIdPersonaje() {
 		Personaje p1 = new Humano("Ben Affleck", new Asesino(), 2);
 		Assert.assertEquals(2, p1.getIdPersonaje());
 	}
 
+	/**
+	 * Se verifica que se puede aumentar la salud
+	 */
 	@Test
 	public void testAumentarSalud() {
 		Personaje p1 = new Humano("Ben Affleck", new Asesino(), 2);
@@ -154,6 +221,9 @@ public class TestPersonajeNuevo {
 		Assert.assertEquals(115, p1.getSalud());
 	}
 
+	/**
+	 * Se verifica que se actualizan los atributos.
+	 */
 	@Test
 	public void testActualizarAtributos() {
 		Personaje p1 = new Humano("Ben Affleck", new Asesino(), 2);

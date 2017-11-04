@@ -13,24 +13,40 @@ import edu.unlam.wome.dominio.main.Personaje;
 
 public class TestRefactoreoAtributos {
 
+	/**
+	 * Se verifica que la destreza del asesino
+	 * es la correcta
+	 */
 	@Test
 	public void testDestrezaAsesino() {
 		Personaje p = new Humano("Ben Affleck", new Asesino(), 1);
 		Assert.assertEquals(15, p.getDestreza());
 	}
 
+	/**
+	 * Se verifica que la fuerza del guerrero
+	 * es la correcta
+	 */
 	@Test
 	public void testFuerzaGuerrero() {
 		Personaje p = new Humano("Ben Affleck", new Guerrero(), 1);
 		Assert.assertEquals(15, p.getFuerza());
 	}
 
+	/**
+	 * Se verifica que la inteligencia del guerrero
+	 * es la correcta
+	 */
 	@Test
 	public void testInteligenciaHechicero() {
 		Personaje p = new Humano("Ben Affleck", new Hechicero(), 1);
 		Assert.assertEquals(15, p.getInteligencia());
 	}
 
+	/**
+	 * Verifica que las habilidades de raza y casta
+	 * sean las correctas.
+	 */
 	@Test
 	public void testFullHumano() {
 		Personaje p = new Humano("Ben Affleck", new Asesino(), 1);
