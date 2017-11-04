@@ -87,6 +87,10 @@ public class TestGuerreroNuevo {
 		Assert.assertFalse(p1.habilidadCasta3(p2));
 	}
 
+	/**
+	 * Verifica que el guerrero no pueda
+	 * utilizar la habilidad 3
+	 */
 	@Test
 	public void testInstanceOfHorrible3() {
 		Personaje p1 = new Humano("Ben Affleck", new Guerrero(), 2);

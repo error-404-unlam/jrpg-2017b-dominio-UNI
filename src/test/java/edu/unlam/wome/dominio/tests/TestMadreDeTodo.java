@@ -9,6 +9,10 @@ import edu.unlam.wome.dominio.main.Personaje;
 
 public class TestMadreDeTodo {
 
+	/**
+	 * Verifica que se cambie el nombre
+	 * del personaje correctamente.
+	 */
 	@Test
 	public void testSetNombre() {
 		Personaje p1 = new Humano("Ben Affleck", new Asesino(), 2);

@@ -11,6 +11,11 @@ import edu.unlam.wome.dominio.main.MyRandomStub;
 
 public class TestHumano {
 
+	/**
+	 * Verifica que el poder 
+	 * "Incentivar" del personaje aumente
+	 * el ataque
+	 */
 	@Test
 	public void testIncentivar() {
 		Humano h = new Humano("Nico", 100, 100, 55, 20, 30, new Hechicero(0.2, 0.3, 1.5), 0, 1, 1);
@@ -22,6 +27,13 @@ public class TestHumano {
 		Assert.assertTrue(e.getAtaque() > 37);
 	}
 
+	/**
+	 * Verifica que al usar la habilidad
+	 * Golpe Fatal, si se realiza, haga el
+	 * daño correspondiente y disminuya la energia
+	 * pero si no se realiza, que no haga daño,
+	 * y penalice con una disminucion en la energia.
+	 */
 	@Test
 	public void testGolpeFatal() {
 		Humano h = new Humano("Nico", 100, 100, 55, 20, 30, new Hechicero(0.2, 0.3, 1.5), 0, 1, 1);

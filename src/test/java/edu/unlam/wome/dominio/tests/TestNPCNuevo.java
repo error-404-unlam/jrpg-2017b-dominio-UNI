@@ -11,6 +11,10 @@ import edu.unlam.wome.dominio.main.Personaje;
 
 public class TestNPCNuevo {
 
+	/**
+	 * Se verifica que las estadisticas de un
+	 * NPC, sean las correctas
+	 */
 	@Test
 	public void testNivelNPC1() {
 		NonPlayableCharacter npc = new NonPlayableCharacter("Pepe", 1, 1);
@@ -19,32 +23,51 @@ public class TestNPCNuevo {
 		Assert.assertEquals(60, npc.getSalud());
 	}
 
+	/**
+	 * Se verifica que si el daño
+	 * recibido es menor que la defensa,
+	 * no le haga daño al NPC
+	 */
 	@Test
 	public void testDanioMenorADef() {
 		NonPlayableCharacter npc = new NonPlayableCharacter("Pepe", 1, 1);
 		Assert.assertEquals(0, npc.serAtacado(1));
 	}
 
+	/**
+	 * Se prueba que la fuerza del NPC
+	 * sea la correcta
+	 */
 	@Test
 	public void testGetFuerza() {
 		NonPlayableCharacter npc = new NonPlayableCharacter("Pepe", 1, 1);
 		Assert.assertEquals(20, npc.getFuerza());
 	}
 
+	/**
+	 * Se verifica que se modifica la fuerza,
+	 * si es que el ataque aumenta
+	 */
 	@Test
 	public void testSetAtaque() {
 		NonPlayableCharacter npc = new NonPlayableCharacter("Pepe", 1, 1);
-		// Set ataque suma su parametro a la fuerza actual, revisar
 		npc.setAtaque(60);
 		Assert.assertEquals(80, npc.getFuerza());
 	}
 
+	/**
+	 * Verifica que un NPC, no tiene Magia
+	 */
 	@Test
 	public void testGetMagia() {
 		NonPlayableCharacter npc = new NonPlayableCharacter("Pepe", 1, 1);
 		Assert.assertEquals(0, npc.getMagia());
 	}
 
+	/**
+	 * Verifica que un NPC pueda atacar
+	 * a otro NPC y a un Jugador.
+	 */
 	@Test
 	public void testAtacar() {
 		NonPlayableCharacter npc = new NonPlayableCharacter("Pepe", 1, 1);
@@ -60,6 +83,10 @@ public class TestNPCNuevo {
 		Assert.assertEquals(5, npc.atacar(p1));
 	}
 
+	/**
+	 * Se verifica que la salud se asigne
+	 * correctamente
+	 */
 	@Test
 	public void testSetSalud() {
 		NonPlayableCharacter npc = new NonPlayableCharacter("Pepe", 1, 1);
@@ -67,6 +94,11 @@ public class TestNPCNuevo {
 		Assert.assertEquals(80, npc.getSalud());
 	}
 
+	/**
+	 * Se verifica que las estadisticas del
+	 * NPC sean las correctas de acuerdo a su
+	 * Dificultad = 9
+	 */
 	@Test
 	public void testNivelNPCDefault() {
 		NonPlayableCharacter npc = new NonPlayableCharacter("Pepe", 1, 9);
@@ -75,6 +107,11 @@ public class TestNPCNuevo {
 		Assert.assertEquals(300, npc.getSalud());
 	}
 
+	/**
+	 * Se verifica que las estadisticas del
+	 * NPC sean las correctas de acuerdo a su
+	 * Dificultad = 3
+	 */
 	@Test
 	public void testNivel3NPC() {
 		NonPlayableCharacter npc = new NonPlayableCharacter("Pepe", 1, 2);
@@ -83,6 +120,10 @@ public class TestNPCNuevo {
 		Assert.assertEquals(30, npc.getFuerza());
 	}
 
+	/**
+	 * Verifica que un NPC, mata a otro NPC,
+	 * y ademas puede atacar a un Personaje.
+	 */
 	@Test
 	public void testAtacar2() {
 		NonPlayableCharacter npc = new NonPlayableCharacter("Pepe", 1, 1);

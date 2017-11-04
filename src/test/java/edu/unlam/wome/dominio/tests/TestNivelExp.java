@@ -9,6 +9,10 @@ import edu.unlam.wome.dominio.main.Personaje;
 
 public class TestNivelExp {
 
+	/**
+	 * Se verifica que se asigne correctamente
+	 * la experiencia
+	 */
 	@Test
 	public void testGanarExp() {
 		Personaje.cargarTablaNivel();
@@ -17,6 +21,11 @@ public class TestNivelExp {
 		Assert.assertTrue(h.getExperiencia() == 45);
 	}
 
+	/**
+	 * Se verifica que al subir de level,
+	 * se resten los puntos de experiencia
+	 * sobrantes.
+	 */
 	@Test
 	public void testSubirNivel() {
 		Personaje.cargarTablaNivel();
@@ -26,6 +35,10 @@ public class TestNivelExp {
 		Assert.assertTrue(h.getExperiencia() == 0);
 	}
 
+	/**
+	 * Se verifica que el level maximo
+	 * sea el 100.
+	 */
 	@Test
 	public void testLevel100() {
 		Personaje.cargarTablaNivel();

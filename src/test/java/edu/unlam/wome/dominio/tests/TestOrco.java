@@ -12,6 +12,10 @@ import edu.unlam.wome.dominio.main.Orco;
 
 public class TestOrco {
 
+	/**
+	 * Verifica que la habilidad "golpe defensivo"
+	 * del Orco, funciona correctamente
+	 */
 	@Test
 	public void testGolpeDefensivo() {
 		Humano h = new Humano("Nicolas", new Guerrero(), 1);
@@ -25,6 +29,10 @@ public class TestOrco {
 			Assert.assertTrue(o.getSalud() == 105);
 	}
 
+	/**
+	 * Verifica que la habilidad "Mordisco de Vida"
+	 * del Orgo, debilita al enemigo
+	 */
 	@Test
 	public void testMordiscoDeVida() {
 		Humano h = new Humano("Nico", 100, 100, 55, 20, 30, new Hechicero(0.2, 0.3, 1.5), 0, 1, 1);
