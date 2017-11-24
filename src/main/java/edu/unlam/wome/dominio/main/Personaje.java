@@ -187,6 +187,9 @@ public abstract class Personaje extends MadreDeTodo implements Peleable, Seriali
 	 * Nombre de la casta del personaje.
 	 */
 	private String nombreCasta;
+	
+	private int modoJuego = 0;
+	
 
 	/**
 	 * Metodo que retorna las habilidades que posee el personaje. Segun la casta del mismo.
@@ -570,17 +573,19 @@ public abstract class Personaje extends MadreDeTodo implements Peleable, Seriali
 	 */
 	@Override
 	public final int serAtacado(final int danio) {
-		int danioRecibido = danio;
-		if (this.getRandom().nextDouble() >= this.getCasta().getProbabilidadEvitarDanio()) {
-			danioRecibido -= this.getDefensa();
-			if (danioRecibido > 0) {
-				if (salud <= danioRecibido) {
-					danioRecibido = salud;
-					salud = 0;
-				} else {
-					salud -= danioRecibido;
+		if(getModoJuego() != 1) {
+			int danioRecibido = danio;
+			if (this.getRandom().nextDouble() >= this.getCasta().getProbabilidadEvitarDanio()) {
+				danioRecibido -= this.getDefensa();
+				if (danioRecibido > 0) {
+					if (salud <= danioRecibido) {
+						danioRecibido = salud;
+						salud = 0;
+					} else {
+						salud -= danioRecibido;
+					}
+					return danioRecibido;
 				}
-				return danioRecibido;
 			}
 		}
 		return 0;
@@ -1002,6 +1007,14 @@ public abstract class Personaje extends MadreDeTodo implements Peleable, Seriali
 		energia = map.get("energia").intValue();
 		this.setDefensa(map.get("defensa").intValue());
 		casta.setProbabilidadEvitarDanio(map.get("probEvitarDanio").doubleValue());
+	}
+
+	public int getModoJuego() {
+		return modoJuego;
+	}
+
+	public void setModoJuego(int modoJuego) {
+		this.modoJuego = modoJuego;
 	}
 
 	/**

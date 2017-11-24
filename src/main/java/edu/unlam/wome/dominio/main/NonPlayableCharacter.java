@@ -209,4 +209,10 @@ public class NonPlayableCharacter extends MadreDeTodo implements Peleable {
 	public final int getMagia() {
 		return 0;
 	}
+
+	@Override
+	public int getModoJuego() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 }

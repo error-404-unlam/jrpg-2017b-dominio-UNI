@@ -5,6 +5,7 @@ package edu.unlam.wome.dominio.main;
  * las esté implementando será como responderán
  */
 public interface Peleable {
+	int getModoJuego();
 	/**
 	 * Metodo implementado en Personaje y en NonPlayableCharacter.
 	 * @param danio
